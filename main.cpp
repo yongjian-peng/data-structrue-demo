@@ -2,6 +2,7 @@
 #include "TwoSum.cc"
 #include "CorpFlight.cc"
 #include "Reverse.cc"
+#include "FindLAC.cc"
 using namespace std;
 
 int main()
@@ -27,21 +28,31 @@ int main()
 
     // vector<vector<int>> array;
     
-    Reverse re;
-    ListNode* one = new ListNode(1);
-    ListNode* two_l = new ListNode(2);
-    ListNode* three = new ListNode(3);
-    ListNode* four = new ListNode(4);
-    ListNode* five = new ListNode(5);
-    ListNode* six = new ListNode(6);
-    one->next = two_l;
-    two_l->next = three;
-    three->next = four;
-    four->next = five;
-    five->next = six;
-    six->next = NULL;
+    // Reverse re;
+    // ListNode* one = new ListNode(1);
+    // ListNode* two_l = new ListNode(2);
+    // ListNode* three = new ListNode(3);
+    // ListNode* four = new ListNode(4);
+    // ListNode* five = new ListNode(5);
+    // ListNode* six = new ListNode(6);
+    // one->next = two_l;
+    // two_l->next = three;
+    // three->next = four;
+    // four->next = five;
+    // five->next = six;
+    // six->next = NULL;
 
-    cout << re.ReverseList(one)->val << endl;
+    // cout << re.ReverseList(one)->val << endl;
+
+    Node * root = newNode(1);
+    root->left = newNode(2);
+    root->right = newNode(3);
+    root->left->left = newNode(4);
+    root->left->right = newNode(5);
+    root->right->left = newNode(6);
+    root->right->right = newNode(7);
+
+    cout << "LCA(4,7) = " << findLCA_H(root, 4,7)->key;
 
     return 0;
 }
