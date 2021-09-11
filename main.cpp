@@ -7,6 +7,10 @@
 #include "ReverseBetween.cc"
 #include "PrintLink.cc"
 #include "Default.h"
+#include "KthLargest.cc"
+#include "HeapSorti.cc"
+#include "MergeArray.cc"
+#include "PushZerosToEnd.cc"
 using namespace std;
 
 int main()
@@ -92,13 +96,67 @@ int main()
 
     // cout << reb.reverseBetween(one, 1, 4) << endl;
 
-    int arr[] = {12, 11, 13, 5, 6, 7};
+    // ------ 堆排序 ---------
+    // int arr[] = {12, 11, 13, 5, 6, 7};
+    // int n = sizeof(arr) / sizeof(arr[0]);
+
+    // heapSort(arr, n);
+
+    // cout << "Sorted array is \n";
+    // printArray(arr, n);
+
+    // -------- 动态查找 第 k 大元素 ----------
+    /* Let us create following BST
+              50
+           /     \
+          30      70
+         /  \    /  \
+       20   40  60   80 */
+    // Node *root = NULL;
+    // root = insert(root, 50);
+    // insert(root, 30);
+    // insert(root, 20);
+    // insert(root, 40);
+    // insert(root, 70);
+    // insert(root, 60);
+    // insert(root, 80);
+
+    // int c = 0;
+    // kthLargest(root, 6);
+    // for (int k = 1; k <= 7; k++)
+    // {
+    //     kthLargest(root, k);
+    // }
+
+    // --------- 堆排序 ------------
+    // int arr[] = {12, 11, 13, 5, 6, 7};
+    // int n = sizeof(arr) / sizeof(arr[0]);
+
+    // HeapSorti heap;
+
+    // heap.headSorti(arr, n);
+    // heap.printArray(arr, n);
+
+    // ---------- 合并两个有序数组 -------
+    // int arr1[] = {1, 3, 5, 7};
+    // int n1 = sizeof(arr1) / sizeof(arr1[0]);
+
+    // int arr2[] = {2, 4, 6, 8};
+    // int n2 = sizeof(arr2) / sizeof(arr2[0]);
+
+    // int arr3[n1 + n2];
+
+    // mergeArrays(arr1, arr2, n1, n2, arr3);
+    // int n3 = n1 + n2;
+    // printArray(arr3, n3);
+
+    // mergeArrays2(arr1, arr2, n1, n2);
+
+    // ------- 移动零 ----------
+    int arr[] = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9};
     int n = sizeof(arr) / sizeof(arr[0]);
+    pushZoresToEnd(arr, n);
 
-    heapSort(arr, n);
-
-    cout << "Sorted array is \n";
     printArray(arr, n);
-
     return 0;
 }

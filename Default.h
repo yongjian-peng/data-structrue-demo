@@ -23,21 +23,32 @@ void ShowList(struct ListNode *h)
     }
 }
 
+struct Node
+{
+    struct Node *left, *right;
+    int key;
+};
 
+Node* newNode(int key)
+{
+    Node *temp = new Node;
+    temp->key = key;
+    temp->left = temp->right = NULL;
+    return temp;
+};
+    // void swap(int x, int y)
+    // {
+    //     int temp = y;
+    //     y = x;
+    //     x = temp;
+    //     cout << x << ":" << y << endl;
+    // }
 
-// void swap(int x, int y) 
-// {
-//     int temp = y;
-//     y = x;
-//     x = temp;
-//     cout << x << ":" << y << endl;
-// }
-
-// void pswap(int *x, int *y) 
-// {
-//     int temp = *y;
-//     *y = *x;
-//     *x = temp;
-// }
+    // void pswap(int *x, int *y)
+    // {
+    //     int temp = *y;
+    //     *y = *x;
+    //     *x = temp;
+    // }
 
 #endif

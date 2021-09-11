@@ -14,6 +14,9 @@ class HeapSort
             if (l < n && arr[l] > arr[largest]) {
                 largest = l;
             }
+            if (r < n && arr[r] < arr[largest]) {
+                largest = r;
+            }
             if (largest != i) {
                 swap(arr[i], arr[largest]);
 
