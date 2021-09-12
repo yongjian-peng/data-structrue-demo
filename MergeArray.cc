@@ -1,5 +1,4 @@
-#include <iostream>
-#include <map>
+#include "stdc++.h"
 using namespace std;
 
 void mergeArrays(int arr1[], int arr2[], int n1, int n2, int arr3[]) {

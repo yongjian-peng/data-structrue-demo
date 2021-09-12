@@ -37,21 +37,23 @@ int main()
     // vector<vector<int>> array;
 
     // 链表
-    // Reverse re;
-    // ListNode* one = new ListNode(1);
-    // ListNode* two_l = new ListNode(2);
-    // ListNode* three = new ListNode(3);
-    // ListNode* four = new ListNode(4);
-    // ListNode* five = new ListNode(5);
-    // ListNode* six = new ListNode(6);
-    // one->next = two_l;
-    // two_l->next = three;
-    // three->next = four;
-    // four->next = five;
-    // five->next = six;
-    // six->next = NULL;
+    Reverse re;
+    ListNode* one = new ListNode(1);
+    ListNode* two_l = new ListNode(2);
+    ListNode* three = new ListNode(3);
+    ListNode* four = new ListNode(4);
+    ListNode* five = new ListNode(5);
+    ListNode* six = new ListNode(6);
+    one->next = two_l;
+    two_l->next = three;
+    three->next = four;
+    four->next = five;
+    five->next = six;
+    six->next = NULL;
 
-    // cout << re.ReverseList(one)->val << endl;
+    cout << re.ReverseList2(one)->val << endl;
+
+    ShowList(one);
 
     // 树 链表
     // Node * root = newNode(1);
@@ -153,10 +155,10 @@ int main()
     // mergeArrays2(arr1, arr2, n1, n2);
 
     // ------- 移动零 ----------
-    int arr[] = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    pushZoresToEnd(arr, n);
+    // int arr[] = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9};
+    // int n = sizeof(arr) / sizeof(arr[0]);
+    // pushZoresToEnd(arr, n);
 
-    printArray(arr, n);
+    // printArray(arr, n);
     return 0;
 }

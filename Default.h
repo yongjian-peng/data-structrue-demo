@@ -14,13 +14,14 @@ struct ListNode
     }
 };
 
-void ShowList(struct ListNode *h)
+void ShowList(ListNode *h)
 {
     while (h != NULL)
     {
-        cout << h->val << endl;
+        cout << h->val << " ";
         h = h->next;
     }
+    cout << endl;
 }
 
 struct Node
