@@ -11,6 +11,7 @@
 #include "HeapSorti.cc"
 #include "MergeArray.cc"
 #include "PushZerosToEnd.cc"
+#include "ReverseKGroup.cc"
 using namespace std;
 
 int main()
@@ -38,22 +39,25 @@ int main()
 
     // 链表
     Reverse re;
+
+    ReverseKGroup reg;
     ListNode* one = new ListNode(1);
-    ListNode* two_l = new ListNode(2);
-    ListNode* three = new ListNode(3);
-    ListNode* four = new ListNode(4);
-    ListNode* five = new ListNode(5);
-    ListNode* six = new ListNode(6);
-    one->next = two_l;
-    two_l->next = three;
-    three->next = four;
-    four->next = five;
-    five->next = six;
-    six->next = NULL;
+    one->next = new ListNode(2);
+    one->next->next = new ListNode(3);
+    one->next->next->next = new ListNode(4);
+    one->next->next->next->next = new ListNode(5);
+    one->next->next->next->next->next = new ListNode(6);
+    one->next->next->next->next->next->next = new ListNode(7);
+    one->next->next->next->next->next->next->next = new ListNode(8);
 
-    cout << re.ReverseList2(one)->val << endl;
+    //re.ReverseList2(one);
+    // reg.reversekGroup(one, 2);
 
-    ShowList(one);
+    // cout << re.ReverseList2(one)->val << endl;
+
+    //ShowList(re.ReverseList2(one));
+
+    ShowList(reg.reversekGroup(one, 2));
 
     // 树 链表
     // Node * root = newNode(1);
