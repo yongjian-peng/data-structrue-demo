@@ -12,10 +12,21 @@
 #include "MergeArray.cc"
 #include "PushZerosToEnd.cc"
 #include "ReverseKGroup.cc"
+#include "NumberOfSubarrays.cc"
 using namespace std;
 
 int main()
 {
+
+  NumberOfSubarrays ns;
+
+  int arr[] = {1, 1, 0, 3, 1};
+
+  vector<int> nums(arr, arr + 5);
+
+  int s = 3;
+
+  cout << ns.numberOfSubarrays(nums, s) << endl;
     // TwoSum two;
     // int arr[4] = {2, 2, 2, 7};
     // vector<int> ao(arr, arr + 4);
@@ -37,18 +48,18 @@ int main()
 
     // vector<vector<int>> array;
 
-    // 链表
-    Reverse re;
+    // ----------------- 链表 ------------------
+    // Reverse re;
 
-    ReverseKGroup reg;
-    ListNode* one = new ListNode(1);
-    one->next = new ListNode(2);
-    one->next->next = new ListNode(3);
-    one->next->next->next = new ListNode(4);
-    one->next->next->next->next = new ListNode(5);
-    one->next->next->next->next->next = new ListNode(6);
-    one->next->next->next->next->next->next = new ListNode(7);
-    one->next->next->next->next->next->next->next = new ListNode(8);
+    // ReverseKGroup reg;
+    // ListNode* one = new ListNode(1);
+    // one->next = new ListNode(2);
+    // one->next->next = new ListNode(3);
+    // one->next->next->next = new ListNode(4);
+    // one->next->next->next->next = new ListNode(5);
+    // one->next->next->next->next->next = new ListNode(6);
+    // one->next->next->next->next->next->next = new ListNode(7);
+    // one->next->next->next->next->next->next->next = new ListNode(8);
 
     //re.ReverseList2(one);
     // reg.reversekGroup(one, 2);
@@ -57,9 +68,9 @@ int main()
 
     //ShowList(re.ReverseList2(one));
 
-    ShowList(reg.reversekGroup(one, 2));
+    // ShowList(reg.reversekGroup(one, 2));
 
-    // 树 链表
+    // --------------- 树 链表 ---------------
     // Node * root = newNode(1);
     // root->left = newNode(2);
     // root->right = newNode(3);
@@ -79,7 +90,7 @@ int main()
     // cout << "Sorted array is \n";
     // printArray(arr, n);
 
-    // 反转链表 输入 左 右 返回区间内反转
+    //  ---------------- 反转链表 输入 左 右 返回区间内反转 ------------------
     // Solution st;
 
     // ReverseBetween reb;
@@ -158,7 +169,7 @@ int main()
 
     // mergeArrays2(arr1, arr2, n1, n2);
 
-    // ------- 移动零 ----------
+    // --------- 移动零 ----------
     // int arr[] = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9};
     // int n = sizeof(arr) / sizeof(arr[0]);
     // pushZoresToEnd(arr, n);
