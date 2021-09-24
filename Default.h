@@ -37,6 +37,15 @@ Node* newNode(int key)
     temp->left = temp->right = NULL;
     return temp;
 };
+
+struct NodeL
+{
+    int val;
+    int idx;
+    NodeL *pre;
+    NodeL *next;
+};
+
     // void swap(int x, int y)
     // {
     //     int temp = y;
@@ -51,5 +60,24 @@ Node* newNode(int key)
     //     *y = *x;
     //     *x = temp;
     // }
+
+struct tmp1 // 运算符重载
+{
+    int x;
+    tmp1(int a) { x = a; }
+    bool operator<(const tmp1& a) const
+    {
+        return x < a.x; // 大顶堆
+    }
+};
+
+// 方法二
+struct tmp2 // 重写仿函数
+{
+    bool operator() (tmp1 a, tmp1 b)
+    {
+        return a.x < b.x; // 大顶堆
+    }
+};
 
 #endif

@@ -15,6 +15,9 @@ public:
         }
         for (int i = 0; i < nums.size(); i++)
         {
+            // map count 返回的是被查找元素的个数
+            int ss = dic.count(target - nums[i]);
+            int a = ss;
             if (dic.count(target - nums[i]) && dic[target - nums[i]] != i)
             {
                 vec.push_back(i);
