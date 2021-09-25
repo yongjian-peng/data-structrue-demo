@@ -19,6 +19,8 @@
 #include <deque>
 #include "stdc++.h"
 #include "Calculate.cc"
+#include "LargestRectangleArea.cc"
+#include "Trap.cc"
 
 using namespace std;
 
@@ -53,11 +55,26 @@ void DeleteNode(NodeL* node)
 
 int main()
 {
-  Calculate cal;
-  string s = " 2-1 + 2 ";
+  // ----------- 接雨滴 ---------------
+  // 横条解题 单调栈
+  Trap trap;
+  int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+  vector<int> hei(heights, heights + 12);
+  cout << trap.trap(hei) << endl;
+  // 竖条解题 维护前缀 后缀 最大值
+  cout << trap.trapheight(hei) << endl;
+  // ----------- 柱状图中最大矩形 ----------
+  // LargestRectangleArea lra;
+  // int heights[] = {2, 1, 5, 6, 2, 3};
+  // vector<int> hei(heights, heights + 6);
+  // cout << lra.largestReactangleArea(hei) << endl;
 
-  cout << cal.calculat(s) << endl;
-  cout << "hsh" << endl;
+  // ----------- 计算器 ------------
+  // Calculate cal;
+  // string s = " 2-1 + 2 ";
+
+  // cout << cal.calculat(s) << endl;
+  // cout << "hsh" << endl;
   // ----------- 邻值查找 ---------------
   // cin >> n;
   // for (int i = 1; i <= n; i++) { // i = 0
