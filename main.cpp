@@ -21,6 +21,8 @@
 #include "Calculate.cc"
 #include "LargestRectangleArea.cc"
 #include "Trap.cc"
+#include "LargestRectangleArea2.cc"
+#include "LargestRectangleArea3.cc"
 
 using namespace std;
 
@@ -57,17 +59,25 @@ int main()
 {
   // ----------- 接雨滴 ---------------
   // 横条解题 单调栈
-  Trap trap;
-  int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-  vector<int> hei(heights, heights + 12);
-  cout << trap.trap(hei) << endl;
-  // 竖条解题 维护前缀 后缀 最大值
-  cout << trap.trapheight(hei) << endl;
+  // Trap trap;
+  // LargestRectangleArea2 lra2;
+  // int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+  // vector<int> hei(heights, heights + 12);
+  // cout << trap.trap(hei) << endl;
+  // // 竖条解题 维护前缀 后缀 最大值
+  // cout << trap.trapheight(hei) << endl;
+  
+  // cout << lra2.largestRectangleArea2(hei) << endl;
   // ----------- 柱状图中最大矩形 ----------
-  // LargestRectangleArea lra;
-  // int heights[] = {2, 1, 5, 6, 2, 3};
-  // vector<int> hei(heights, heights + 6);
-  // cout << lra.largestReactangleArea(hei) << endl;
+  LargestRectangleArea lra;
+  int heights[] = {2, 1, 5, 6, 2, 3};
+  vector<int> hei(heights, heights + 6);
+  cout << lra.largestReactangleArea(hei) << endl;
+
+  LargestRectangleArea3 Lra3;
+  int heights2[] = {2, 1, 5, 6, 2, 3};
+  vector<int> hei2(heights2, heights2 + 6);
+  cout << Lra3.largestRectangleArea3(hei2) << endl;
 
   // ----------- 计算器 ------------
   // Calculate cal;
@@ -116,254 +126,254 @@ int main()
   //   printf("%d %d\n", abs(a[ans[i]] - a[i]), ans[i]); // a[ans[i] - a[i]]
   // }
 
-    // ----------- Learn priority_queue 优先队列 ---------------
-    // 对于基础类型，默认时大顶堆
-    // priority_queue<int> a;
-    // // 等同于 priority_queue<int, vector<int>, less<int> > a;
+  // ----------- Learn priority_queue 优先队列 ---------------
+  // 对于基础类型，默认时大顶堆
+  // priority_queue<int> a;
+  // // 等同于 priority_queue<int, vector<int>, less<int> > a;
 
-    // priority_queue<int, vector<int>, greater<int> > c; // 这样就是小顶堆
-    // priority_queue<string> b;
+  // priority_queue<int, vector<int>, greater<int> > c; // 这样就是小顶堆
+  // priority_queue<string> b;
 
-    // for (int i = 0; i < 5; i++) {
-    //   a.push(i);
-    //   c.push(i);
-    // }
+  // for (int i = 0; i < 5; i++) {
+  //   a.push(i);
+  //   c.push(i);
+  // }
 
-    // while (!a.empty()) {
-    //   cout << a.top() << " ";
-    //   a.pop();
-    // }
-    // cout << "\n" << endl;
+  // while (!a.empty()) {
+  //   cout << a.top() << " ";
+  //   a.pop();
+  // }
+  // cout << "\n" << endl;
 
-    // while(!c.empty()) {
-    //   cout << c.top() << " ";
-    //   c.pop();
-    // }
-    // cout << "\n"
-    //      << endl;
+  // while(!c.empty()) {
+  //   cout << c.top() << " ";
+  //   c.pop();
+  // }
+  // cout << "\n"
+  //      << endl;
 
-    // b.push("abc");
-    // b.push("abcd");
-    // b.push("cbc");
+  // b.push("abc");
+  // b.push("abcd");
+  // b.push("cbc");
 
-    // while(!b.empty()) {
-    //   cout << b.top() << " ";
-    //   b.pop();
-    // }
-    // cout << "\n"
-    //      << endl;
+  // while(!b.empty()) {
+  //   cout << b.top() << " ";
+  //   b.pop();
+  // }
+  // cout << "\n"
+  //      << endl;
 
-    // pair 的比较，先比较第一个元素，第一个相等比较第二个
-    // priority_queue<pair<int, int> > a;
-    // pair<int, int> b(1, 2);
-    // pair<int, int> c(1, 3);
-    // pair<int, int> d(2, 5);
-    // a.push(d);
-    // a.push(c);
-    // a.push(b);
-    // while (!a.empty()) {
-    //   cout << a.top().first << " " << a.top().second << "\n";
-    //   a.pop();
-    // }
+  // pair 的比较，先比较第一个元素，第一个相等比较第二个
+  // priority_queue<pair<int, int> > a;
+  // pair<int, int> b(1, 2);
+  // pair<int, int> c(1, 3);
+  // pair<int, int> d(2, 5);
+  // a.push(d);
+  // a.push(c);
+  // a.push(b);
+  // while (!a.empty()) {
+  //   cout << a.top().first << " " << a.top().second << "\n";
+  //   a.pop();
+  // }
 
-    // 对于自定义类型
-    // tmp1 a(1);
-    // tmp1 b(2);
-    // tmp1 c(3);
-    // priority_queue<tmp1> d;
-    // d.push(b);
-    // d.push(c);
-    // d.push(a);
+  // 对于自定义类型
+  // tmp1 a(1);
+  // tmp1 b(2);
+  // tmp1 c(3);
+  // priority_queue<tmp1> d;
+  // d.push(b);
+  // d.push(c);
+  // d.push(a);
 
-    // while(!d.empty()) {
-    //   cout << d.top().x << " ";
-    //   d.pop();
-    // }
-    // cout << "\n"
-    //      << endl;
+  // while(!d.empty()) {
+  //   cout << d.top().x << " ";
+  //   d.pop();
+  // }
+  // cout << "\n"
+  //      << endl;
 
-    // priority_queue<tmp1, vector<tmp1>, tmp2> f;
-    // f.push(c);
-    // f.push(b);
-    // f.push(a);
-    // while (!f.empty()) {
-    //   cout << f.top().x << " ";
-    //   f.pop();
-    // }
-    // cout << endl;
+  // priority_queue<tmp1, vector<tmp1>, tmp2> f;
+  // f.push(c);
+  // f.push(b);
+  // f.push(a);
+  // while (!f.empty()) {
+  //   cout << f.top().x << " ";
+  //   f.pop();
+  // }
+  // cout << endl;
 
-    // ----------- deque 双端队列 -----------
-    // 是由一段一段的定量连续空间构成，可以向两端发展，因此不论在尾部或头部安插元素都十分迅速
-    // 在中间安插元素则比较费时，因为必须移动其他元素
-    //  创建和初始化
-    // deque<int> dq;
-    // deque<int> dq1(8);
-    // deque<int> dq2(8, 50);
-    // deque<int> dq3(dq2.begin(), dq2.end());
-    // deque<int> dq4(dq3);
+  // ----------- deque 双端队列 -----------
+  // 是由一段一段的定量连续空间构成，可以向两端发展，因此不论在尾部或头部安插元素都十分迅速
+  // 在中间安插元素则比较费时，因为必须移动其他元素
+  //  创建和初始化
+  // deque<int> dq;
+  // deque<int> dq1(8);
+  // deque<int> dq2(8, 50);
+  // deque<int> dq3(dq2.begin(), dq2.end());
+  // deque<int> dq4(dq3);
 
-    // cout << "dq output:";
-    // for (auto i : dq)
-    //   cout << i << ", ";
-    // cout << "\n";
+  // cout << "dq output:";
+  // for (auto i : dq)
+  //   cout << i << ", ";
+  // cout << "\n";
 
-    // cout << "dq1 output: ";
-    // for (auto i : dq1)
-    //   cout << i << ", ";
-    // cout << "\n";
+  // cout << "dq1 output: ";
+  // for (auto i : dq1)
+  //   cout << i << ", ";
+  // cout << "\n";
 
-    // cout << "dq2 output: ";
-    // for (auto i : dq2)
-    //   cout << i << ", ";
-    // cout << "\n";
+  // cout << "dq2 output: ";
+  // for (auto i : dq2)
+  //   cout << i << ", ";
+  // cout << "\n";
 
-    // cout << "dq3 output: ";
-    // for (auto i : dq3)
-    //   cout << i << ", ";
-    // cout << "\n";
+  // cout << "dq3 output: ";
+  // for (auto i : dq3)
+  //   cout << i << ", ";
+  // cout << "\n";
 
-    // cout << "dq4 output: ";
-    // for (auto i : dq4)
-    //   cout << i << ", ";
-    // cout << "\n";
+  // cout << "dq4 output: ";
+  // for (auto i : dq4)
+  //   cout << i << ", ";
+  // cout << "\n";
 
-    // ------- 成员函数 新增 --------
-    // deque<int> dq;
-    // deque<int> dq1(1, 50);
-    // int a = 30;
+  // ------- 成员函数 新增 --------
+  // deque<int> dq;
+  // deque<int> dq1(1, 50);
+  // int a = 30;
 
-    // // 末尾追加
-    // dq.push_back(10); // 10
-    // dq.push_back(20); // 10, 20
-    // // 头部追加
-    // dq.push_front(5); // 5, 10, 20
-    // // 末尾追加 copy
-    // dq.push_back(a); // 5, 10, 20, 30
-    // a = 40;
-    // // 末尾追加 moved
-    // dq.push_back(move(a)); // 5, 10, 20, 30, 40
+  // // 末尾追加
+  // dq.push_back(10); // 10
+  // dq.push_back(20); // 10, 20
+  // // 头部追加
+  // dq.push_front(5); // 5, 10, 20
+  // // 末尾追加 copy
+  // dq.push_back(a); // 5, 10, 20, 30
+  // a = 40;
+  // // 末尾追加 moved
+  // dq.push_back(move(a)); // 5, 10, 20, 30, 40
 
-    // cout << "dq output: ";
-    // for (auto i : dq)
-    //   cout << i << ", ";
-    // cout << "\n";
+  // cout << "dq output: ";
+  // for (auto i : dq)
+  //   cout << i << ", ";
+  // cout << "\n";
 
-    // // deque<int>::iterator it = dq.begin();
-    // auto it = dq.begin();
-    // ++it;
-    // // 在指定的迭代 position 前进行插入新元素
-    // dq.insert(it, 6); // 5, 6, 10, 20, 30, 40
-    // // 在指定的迭代 position 前插入2个元素 值都为 7
-    // dq.insert(it, 2, 7); // 5, 6, 7, 7, 10, 20, 30, 40
-    // dq1.push_back(60); // 50, 60
-    // dq1.push_back(70); // 50, 60, 70
-    // // 在指定的迭代 position 前指定一个迭代器的范围进行插入
-    // dq.insert(it, dq1.begin(), dq1.end());
-    // cout << "dq output: ";
-    // for (auto i : dq)
-    //   cout << i << ", ";
-    // cout << "\n";
+  // // deque<int>::iterator it = dq.begin();
+  // auto it = dq.begin();
+  // ++it;
+  // // 在指定的迭代 position 前进行插入新元素
+  // dq.insert(it, 6); // 5, 6, 10, 20, 30, 40
+  // // 在指定的迭代 position 前插入2个元素 值都为 7
+  // dq.insert(it, 2, 7); // 5, 6, 7, 7, 10, 20, 30, 40
+  // dq1.push_back(60); // 50, 60
+  // dq1.push_back(70); // 50, 60, 70
+  // // 在指定的迭代 position 前指定一个迭代器的范围进行插入
+  // dq.insert(it, dq1.begin(), dq1.end());
+  // cout << "dq output: ";
+  // for (auto i : dq)
+  //   cout << i << ", ";
+  // cout << "\n";
 
-    // ------- 成员函数 删除 --------
-    // deque<int> dq;
-    // for (int i = 0; i < 10; i++) {
-    //   dq.push_back(i); // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-    // }
-    // dq.pop_front(); // 1, 2, 3, 4, 5, 6, 7, 8, 9
-    // dq.pop_back();  // 1, 2, 3, 4, 5, 6, 7, 8
-    // dq.erase(dq.begin() + 2); // 1, 2, 4, 5, 6, 7, 8
-    // dq.erase(dq.begin() + 2, dq.end() - 2); // 1, 2, 7, 8
+  // ------- 成员函数 删除 --------
+  // deque<int> dq;
+  // for (int i = 0; i < 10; i++) {
+  //   dq.push_back(i); // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+  // }
+  // dq.pop_front(); // 1, 2, 3, 4, 5, 6, 7, 8, 9
+  // dq.pop_back();  // 1, 2, 3, 4, 5, 6, 7, 8
+  // dq.erase(dq.begin() + 2); // 1, 2, 4, 5, 6, 7, 8
+  // dq.erase(dq.begin() + 2, dq.end() - 2); // 1, 2, 7, 8
 
-    // for (auto i : dq)
-    //   cout << i << ", ";
-    // cout << "\n";
-    // ------- 成员函数 遍历 --------
-    // deque<int> dq;
-    // for (int i = 0; i < 10; i++) {
-    //   dq.push_back(i);
-    // }
+  // for (auto i : dq)
+  //   cout << i << ", ";
+  // cout << "\n";
+  // ------- 成员函数 遍历 --------
+  // deque<int> dq;
+  // for (int i = 0; i < 10; i++) {
+  //   dq.push_back(i);
+  // }
 
-    // deque<int>::iterator it = dq.begin();
-    // for (it; it != dq.end(); it++) {
-    //   cout << *it << " ";
-    // }
-    // cout << "\n";
+  // deque<int>::iterator it = dq.begin();
+  // for (it; it != dq.end(); it++) {
+  //   cout << *it << " ";
+  // }
+  // cout << "\n";
 
-    // ------- 成员函数 其他 at front back size max_size resize --------
-    // deque<int> dq;
-    // dq.push_back(10); // 10
-    // dq.push_back(20); // 10, 20
-    // cout << dq.size() << endl; // 2
-    // dq.front() = 100; // 引用重新赋值 10 -> 20
-    // dq.back() = 200; // 引用重新赋值 20 -> 200
-    // for (int i = 0; i < dq.size(); i++) {
-    //   cout << dq.at(i) << " ";
-    // }
-    // cout << "\n";
+  // ------- 成员函数 其他 at front back size max_size resize --------
+  // deque<int> dq;
+  // dq.push_back(10); // 10
+  // dq.push_back(20); // 10, 20
+  // cout << dq.size() << endl; // 2
+  // dq.front() = 100; // 引用重新赋值 10 -> 20
+  // dq.back() = 200; // 引用重新赋值 20 -> 200
+  // for (int i = 0; i < dq.size(); i++) {
+  //   cout << dq.at(i) << " ";
+  // }
+  // cout << "\n";
 
-    // for (auto i : dq)
-    //   cout << i << " ";
-    // cout << "\n";
-    // dq.resize(5);
-    // ---------- learn queue -------------
-    // int e, n, m;
-    // queue<int> q1;
+  // for (auto i : dq)
+  //   cout << i << " ";
+  // cout << "\n";
+  // dq.resize(5);
+  // ---------- learn queue -------------
+  // int e, n, m;
+  // queue<int> q1;
 
-    // for (int i = 0; i < 10; i++) {
-    //   q1.push(i); // 将元素入队
-    // }
-    // if(!q1.empty()) {
-    //   cout << "queue is not empty\n";
-    // }
-    // n = q1.size();
+  // for (int i = 0; i < 10; i++) {
+  //   q1.push(i); // 将元素入队
+  // }
+  // if(!q1.empty()) {
+  //   cout << "queue is not empty\n";
+  // }
+  // n = q1.size();
 
-    // cout << n << endl;
+  // cout << n << endl;
 
-    // m = q1.back(); // 取队尾元素
+  // m = q1.back(); // 取队尾元素
 
-    // cout << m << endl;
+  // cout << m << endl;
 
-    // for (int j = 0; j < n; j++) {
-    //   e = q1.front(); // 取队首元素
-    //   cout << e << " ";
-    //   q1.pop(); // 将元素出队
-    // }
+  // for (int j = 0; j < n; j++) {
+  //   e = q1.front(); // 取队首元素
+  //   cout << e << " ";
+  //   q1.pop(); // 将元素出队
+  // }
 
-    // cout << endl;
-    // if (q1.empty())
-    //   cout << "queue is empty\n";
-    // system("PAUSE");
+  // cout << endl;
+  // if (q1.empty())
+  //   cout << "queue is empty\n";
+  // system("PAUSE");
 
-    // ----------- Learn Stack ------------
-    // try {
-    //   Stack<int> intStack; // int 类型的栈
-    //   Stack<string> stringStack; // string 类型的栈
+  // ----------- Learn Stack ------------
+  // try {
+  //   Stack<int> intStack; // int 类型的栈
+  //   Stack<string> stringStack; // string 类型的栈
 
-    //   // 操作 int 类型的栈
-    //   intStack.push(7);
-    //   cout << intStack.top() << endl;
+  //   // 操作 int 类型的栈
+  //   intStack.push(7);
+  //   cout << intStack.top() << endl;
 
-    //   // 操作 String 类型的栈
-    //   stringStack.push("Hello");
+  //   // 操作 String 类型的栈
+  //   stringStack.push("Hello");
 
-    //   cout << stringStack.top() << endl;
-    //   stringStack.pop();
-    //   stringStack.pop();
-    // } catch (exception const& ex) {
-    //   cerr << "Exception:" << ex.what() << endl;
-    //   return -1;
-    // }
+  //   cout << stringStack.top() << endl;
+  //   stringStack.pop();
+  //   stringStack.pop();
+  // } catch (exception const& ex) {
+  //   cerr << "Exception:" << ex.what() << endl;
+  //   return -1;
+  // }
 
-    // --------- 统计优美子数组 ----------
-    // NumberOfSubarrays ns;
+  // --------- 统计优美子数组 ----------
+  // NumberOfSubarrays ns;
 
-    // int arr[] = {1, 1, 0, 3, 1};
+  // int arr[] = {1, 1, 0, 3, 1};
 
-    // vector<int> nums(arr, arr + 5);
+  // vector<int> nums(arr, arr + 5);
 
-    // int s = 3;
+  // int s = 3;
 
-    // cout << ns.numberOfSubarrays(nums, s) << endl;
+  // cout << ns.numberOfSubarrays(nums, s) << endl;
   //   TwoSum two;
   // int arr[4] = {2, 2, 2, 7};
   // vector<int> ao(arr, arr + 4);
