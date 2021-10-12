@@ -23,4 +23,4 @@ class MaxSlidingWindow {
 
 private:
     deque<int> q; // 存储下标
-}
+};

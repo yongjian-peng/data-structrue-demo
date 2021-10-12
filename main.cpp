@@ -21,8 +21,12 @@
 #include "Calculate.cc"
 #include "LargestRectangleArea.cc"
 #include "Trap.cc"
+<<<<<<< HEAD
 #include "LargestRectangleArea2.cc"
 #include "LargestRectangleArea3.cc"
+=======
+#include "MaximalRectangle.cc"
+>>>>>>> 87e8a86d2e7aa71e413ba209be88d3743a88afe7
 
 using namespace std;
 
@@ -57,9 +61,22 @@ void DeleteNode(NodeL* node)
 
 int main()
 {
+
+  // ------------- 二维矩阵最大矩形 -------------
+  MaximalRectangle maxRl;
+  vector<vector<char>> matrix(5,vector<char>(5));
+
+  vector<char> vec1(5);
+  vec1.push_back("1");
+  vec1.push_back("0");
+  vec1.push_back("1");
+
+  cout << matrix.size() << endl;
+
   // ----------- 接雨滴 ---------------
   // 横条解题 单调栈
   // Trap trap;
+<<<<<<< HEAD
   // LargestRectangleArea2 lra2;
   // int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
   // vector<int> hei(heights, heights + 12);
@@ -68,6 +85,13 @@ int main()
   // cout << trap.trapheight(hei) << endl;
   
   // cout << lra2.largestRectangleArea2(hei) << endl;
+=======
+  // int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+  // vector<int> hei(heights, heights + 12);
+  // cout << trap.trap(hei) << endl;
+  // 竖条解题 维护前缀 后缀 最大值
+  //cout << trap.trapheight(hei) << endl;
+>>>>>>> 87e8a86d2e7aa71e413ba209be88d3743a88afe7
   // ----------- 柱状图中最大矩形 ----------
   LargestRectangleArea lra;
   int heights[] = {2, 1, 5, 6, 2, 3};
