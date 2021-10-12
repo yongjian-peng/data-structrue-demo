@@ -22,5 +22,5 @@ class GroupAnagrams {
         }
 
     private:
-        vector<vector<string>> groups;
+        unordered_map<string,vector<string>> groups;
 };
