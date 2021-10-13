@@ -63,12 +63,6 @@ int main()
   MaximalRectangle maxRl;
   vector<vector<char>> matrix(5,vector<char>(5));
 
-  vector<char> vec1(5);
-  vec1.push_back("1");
-  vec1.push_back("0");
-  vec1.push_back("1");
-
-  cout << matrix.size() << endl;
 
   // ----------- 接雨滴 ---------------
   // 横条解题 单调栈
@@ -82,15 +76,15 @@ int main()
   
   // cout << lra2.largestRectangleArea2(hei) << endl;
   // ----------- 柱状图中最大矩形 ----------
-  LargestRectangleArea lra;
-  int heights[] = {2, 1, 5, 6, 2, 3};
-  vector<int> hei(heights, heights + 6);
-  cout << lra.largestReactangleArea(hei) << endl;
+  // LargestRectangleArea lra;
+  // int heights[] = {2, 1, 5, 6, 2, 3};
+  // vector<int> hei(heights, heights + 6);
+  // cout << lra.largestReactangleArea(hei) << endl;
 
-  LargestRectangleArea3 Lra3;
-  int heights2[] = {2, 1, 5, 6, 2, 3};
-  vector<int> hei2(heights2, heights2 + 6);
-  cout << Lra3.largestRectangleArea3(hei2) << endl;
+  // LargestRectangleArea3 Lra3;
+  // int heights2[] = {2, 1, 5, 6, 2, 3};
+  // vector<int> hei2(heights2, heights2 + 6);
+  // cout << Lra3.largestRectangleArea3(hei2) << endl;
 
   // ----------- 计算器 ------------
   // Calculate cal;
@@ -99,11 +93,19 @@ int main()
   // cout << cal.calculat(s) << endl;
   // cout << "hsh" << endl;
   // ----------- 邻值查找 ---------------
-  // cin >> n;
-  // for (int i = 1; i <= n; i++) { // i = 0
-  //   scanf("%d", &a[i]);
-  //   rk[i] = i;
-  // }
+  //cin >> n;
+  n = 10;
+  int arr[] = {5, 9, 22, 5, 7, 9, 17, 11, 15, 10};
+
+  vector<int> rs(arr, arr + 10);
+  
+  for (int i = 1; i <= n; i++) { // i = 0
+    //scanf("%d", &a[i]);
+    a[i] = rs[i - 1];
+    rk[i] = i;
+    cout << i << " " << rk[i] << " " << a[i] << " " << endl;
+  }
+
 
   // rk 的 含义：rank[i] 表示排第i名的是谁（是哪个下标）？
   // 有序序列是：a[rk[1]], a[rk[2]], ... a[rk[n]]
@@ -113,31 +115,33 @@ int main()
   // a[rk] = [1,  2,  3,   4,   5]
   // sort(rk + 1, rk + n + 1, [&](int rki, int rkj) { return a[rki] < a[rkj]; });
 
-  // // 保护节点
-  // NodeL head;
-  // NodeL tail;
-  // head.next = &tail;
-  // tail.pre = &head;
-  // head.val = a[rk[1]] - 1e9;
-  // tail.val = a[rk[n]] + 1e9;
-  // for (int i = 1; i <= n; i++) {
-  //   // 数值：a[rk[i]], 下标 rk[i]
-  //   pos[rk[i]] = AddNode(tail.pre, rk[i]);
-  // }
-  // for (int i = n; i > 1; i--) {
-  //   NodeL* curr = pos[i];
-  //   // 前驱 后继
-  //   if (a[i] - curr->pre->val <= curr->next->val - a[i]) {
-  //     ans[i] = curr->pre->idx;
-  //   } else {
-  //     ans[i] = curr->next->idx;
-  //   }
-  //   DeleteNode(curr);
-  // }
+  // 保护节点
+  NodeL head;
+  NodeL tail;
+  head.next = &tail;
+  tail.pre = &head;
+  head.val = a[rk[1]] - 1e9;
+  tail.val = a[rk[n]] + 1e9;
+  for (int i = 1; i <= n; i++) {
+    // 数值：a[rk[i]], 下标 rk[i]
+    pos[rk[i]] = AddNode(tail.pre, rk[i]);
+  }
+  for (int i = n; i > 1; i--) {
+    NodeL* curr = pos[i];
+    // 前驱 后继
+    if (a[i] - curr->pre->val <= curr->next->val - a[i]) {
+      ans[i] = curr->pre->idx;
+    } else {
+      ans[i] = curr->next->idx;
+    }
+    cout << pos[i]->val << " " << ans[i] << " " << endl;
+    DeleteNode(curr);
+  }
 
-  // for (int i = 2; i <= n; i++) {
-  //   printf("%d %d\n", abs(a[ans[i]] - a[i]), ans[i]); // a[ans[i] - a[i]]
-  // }
+  for (int i = 2; i <= n; i++) {
+    cout << a[ans[i]] << " " <<  a[i]  << " " <<  ans[i] << endl;
+    printf("%d %d\n", abs(a[ans[i]] - a[i]), ans[i]); // a[ans[i] - a[i]]
+  }
 
   // ----------- Learn priority_queue 优先队列 ---------------
   // 对于基础类型，默认时大顶堆
