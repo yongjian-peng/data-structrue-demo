@@ -21,5 +21,6 @@ class MaximalRectangle
                     }
                 }
             }
+            return 0;
         }
 };

@@ -24,6 +24,8 @@
 #include "LargestRectangleArea2.cc"
 #include "LargestRectangleArea3.cc"
 #include "MaximalRectangle.cc"
+#include "MapDemo.cc"
+#include "HashMap.cc"
 
 using namespace std;
 
@@ -58,11 +60,43 @@ void DeleteNode(NodeL* node)
 
 int main()
 {
+  // ----------- 自己实现 unordered_map ------------
 
-  // ------------- 二维矩阵最大矩形 -------------
-  MaximalRectangle maxRl;
-  vector<vector<char>> matrix(5,vector<char>(5));
+  // HashMap<int, int, HashFunc> hashmap(10);
+	// hashmap.insert(1, 1);
+	// hashmap.insert(11, 5);
+	// hashmap.print();
+	// cout << "----------" << endl;
+	// hashmap.insert(2, 8);
+	// int num = 1;
+	// hashmap.del(num);//删除键值为1的
+	// hashmap.print();
+	// system("pause");
 
+  // HashMap<int, string> map;
+  // map.insert({1010, "wu"});
+  // map.insert({1020, "fan"});
+  // map.insert({1030, "love"});
+  // map.insert({1040, "yan"});
+  // map.insert({1050, "han"});
+
+  // cout << map[1030] << endl;
+  // // map.erase(1010);
+  // Pair<int, string> *it = map.find(1010);
+  // if (it == nullptr)
+  // {
+  //   cout << "not find" << endl;
+  // }
+  // else
+  // {
+  //   cout << it->first << endl;
+  // }
+
+  // ---------- learn unordered_set unordered_map ------------
+  MapDemo md;
+  md.main();
+
+  // ------------- 二维矩阵最大矩形 ------------
 
   // ----------- 接雨滴 ---------------
   // 横条解题 单调栈
@@ -93,19 +127,11 @@ int main()
   // cout << cal.calculat(s) << endl;
   // cout << "hsh" << endl;
   // ----------- 邻值查找 ---------------
-  //cin >> n;
-  n = 10;
-  int arr[] = {5, 9, 22, 5, 7, 9, 17, 11, 15, 10};
-
-  vector<int> rs(arr, arr + 10);
-  
-  for (int i = 1; i <= n; i++) { // i = 0
-    //scanf("%d", &a[i]);
-    a[i] = rs[i - 1];
-    rk[i] = i;
-    cout << i << " " << rk[i] << " " << a[i] << " " << endl;
-  }
-
+  // cin >> n;
+  // for (int i = 1; i <= n; i++) { // i = 0
+  //   scanf("%d", &a[i]);
+  //   rk[i] = i;
+  // }
 
   // rk 的 含义：rank[i] 表示排第i名的是谁（是哪个下标）？
   // 有序序列是：a[rk[1]], a[rk[2]], ... a[rk[n]]
@@ -115,33 +141,31 @@ int main()
   // a[rk] = [1,  2,  3,   4,   5]
   // sort(rk + 1, rk + n + 1, [&](int rki, int rkj) { return a[rki] < a[rkj]; });
 
-  // 保护节点
-  NodeL head;
-  NodeL tail;
-  head.next = &tail;
-  tail.pre = &head;
-  head.val = a[rk[1]] - 1e9;
-  tail.val = a[rk[n]] + 1e9;
-  for (int i = 1; i <= n; i++) {
-    // 数值：a[rk[i]], 下标 rk[i]
-    pos[rk[i]] = AddNode(tail.pre, rk[i]);
-  }
-  for (int i = n; i > 1; i--) {
-    NodeL* curr = pos[i];
-    // 前驱 后继
-    if (a[i] - curr->pre->val <= curr->next->val - a[i]) {
-      ans[i] = curr->pre->idx;
-    } else {
-      ans[i] = curr->next->idx;
-    }
-    cout << pos[i]->val << " " << ans[i] << " " << endl;
-    DeleteNode(curr);
-  }
+  // // 保护节点
+  // NodeL head;
+  // NodeL tail;
+  // head.next = &tail;
+  // tail.pre = &head;
+  // head.val = a[rk[1]] - 1e9;
+  // tail.val = a[rk[n]] + 1e9;
+  // for (int i = 1; i <= n; i++) {
+  //   // 数值：a[rk[i]], 下标 rk[i]
+  //   pos[rk[i]] = AddNode(tail.pre, rk[i]);
+  // }
+  // for (int i = n; i > 1; i--) {
+  //   NodeL* curr = pos[i];
+  //   // 前驱 后继
+  //   if (a[i] - curr->pre->val <= curr->next->val - a[i]) {
+  //     ans[i] = curr->pre->idx;
+  //   } else {
+  //     ans[i] = curr->next->idx;
+  //   }
+  //   DeleteNode(curr);
+  // }
 
-  for (int i = 2; i <= n; i++) {
-    cout << a[ans[i]] << " " <<  a[i]  << " " <<  ans[i] << endl;
-    printf("%d %d\n", abs(a[ans[i]] - a[i]), ans[i]); // a[ans[i] - a[i]]
-  }
+  // for (int i = 2; i <= n; i++) {
+  //   printf("%d %d\n", abs(a[ans[i]] - a[i]), ans[i]); // a[ans[i] - a[i]]
+  // }
 
   // ----------- Learn priority_queue 优先队列 ---------------
   // 对于基础类型，默认时大顶堆
