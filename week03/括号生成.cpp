@@ -18,11 +18,11 @@ public:
         if (store.find(n) != store.end())
             return store[n];
         vector<string> ans;
-        for (int k = 0; k <= n; k++)
+        for (int k = 0; k <= n; k++) 
         {
-            vector<string> A = generateParenthesis(n - 1);
+            vector<string> A = generateParenthesis(n - 1); // 加法原理
             vector<string> B = generateParenthesis(n - k);
-            for (string& a : A)
+            for (string& a : A) // 乘法原理
                 for (string& b : B)
                     ans.push_back('(' + a ')' + b);
 
