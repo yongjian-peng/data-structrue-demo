@@ -26,6 +26,7 @@
 #include "MaximalRectangle.cc"
 #include "MapDemo.cc"
 #include "HashMap.cc"
+#include "TreeDiameter.cc"
 
 using namespace std;
 
@@ -60,18 +61,51 @@ void DeleteNode(NodeL* node)
 
 int main()
 {
+  // ---------- 树的直径 ---------
+
+  vector<vector<int>> edges;
+
+  vector<int> edge;
+  edge.push_back(0);
+  edge.push_back(1);
+  edges.push_back(edge);
+
+  edge = vector<int>();
+  edge.push_back(1);
+  edge.push_back(2);
+  edges.push_back(edge);
+
+  edge = vector<int>();
+  edge.push_back(2);
+  edge.push_back(3);
+  edges.push_back(edge);
+
+  edge = vector<int>();
+  edge.push_back(1);
+  edge.push_back(4);
+  edges.push_back(edge);
+
+  edge = vector<int>();
+  edge.push_back(4);
+  edge.push_back(5);
+  edges.push_back(edge);
+
+  TreeDiameter td;
+  int i = td.treeDiameter(edges);
+
+  cout << i << endl;
   // ----------- 自己实现 unordered_map ------------
 
   // HashMap<int, int, HashFunc> hashmap(10);
-	// hashmap.insert(1, 1);
-	// hashmap.insert(11, 5);
-	// hashmap.print();
-	// cout << "----------" << endl;
-	// hashmap.insert(2, 8);
-	// int num = 1;
-	// hashmap.del(num);//删除键值为1的
-	// hashmap.print();
-	// system("pause");
+  // hashmap.insert(1, 1);
+  // hashmap.insert(11, 5);
+  // hashmap.print();
+  // cout << "----------" << endl;
+  // hashmap.insert(2, 8);
+  // int num = 1;
+  // hashmap.del(num);//删除键值为1的
+  // hashmap.print();
+  // system("pause");
 
   // HashMap<int, string> map;
   // map.insert({1010, "wu"});
@@ -93,8 +127,8 @@ int main()
   // }
 
   // ---------- learn unordered_set unordered_map ------------
-  MapDemo md;
-  md.main();
+  // MapDemo md;
+  // md.main();
 
   // ------------- 二维矩阵最大矩形 ------------
 
@@ -107,7 +141,7 @@ int main()
   // cout << trap.trap(hei) << endl;
   // // 竖条解题 维护前缀 后缀 最大值
   // cout << trap.trapheight(hei) << endl;
-  
+
   // cout << lra2.largestRectangleArea2(hei) << endl;
   // ----------- 柱状图中最大矩形 ----------
   // LargestRectangleArea lra;
@@ -449,12 +483,12 @@ int main()
   // one->next->next->next->next->next->next = new ListNode(7);
   // one->next->next->next->next->next->next->next = new ListNode(8);
 
-  //re.ReverseList2(one);
-  // reg.reversekGroup(one, 2);
+  // re.ReverseList2(one);
+  //  reg.reversekGroup(one, 2);
 
   // cout << re.ReverseList2(one)->val << endl;
 
-  //ShowList(re.ReverseList2(one));
+  // ShowList(re.ReverseList2(one));
 
   // ShowList(reg.reversekGroup(one, 2));
 
