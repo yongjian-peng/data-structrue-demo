@@ -27,6 +27,8 @@
 #include "MapDemo.cc"
 #include "HashMap.cc"
 #include "TreeDiameter.cc"
+#include "MaxFreq.cc"
+#include "NumberofCattle.cc"
 
 using namespace std;
 
@@ -61,39 +63,62 @@ void DeleteNode(NodeL* node)
 
 int main()
 {
+
+  // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，
+  // 如果存在多个字母并列出现次数最高，则需要把全部都列举出来
+
+  // dasdfdsdfgdeeeeffffggf
+  // string str = "dasdfdsdfgdeeeeffffggf";
+
+  // MaxFreq mf;
+  // vector<string> ans;
+  // ans = mf.maxFreq(str);
+
+  // for (string& s : ans) {
+  //   cout << s << endl;
+  // }
+
+  // 初始只有一头牛。牛只有6年的生命(第0年出生，第6年死去)，牛第3年和第5年会生小牛。问：初始只有一只牛，求第n年牛的个数
+  NumberofCattle nc;
+  int y = 11;
+  cout << "ab" << endl;
+  int ca = nc.numberofNattle(y);
+  cout << ca << endl;
+
+  cout << "aa" << endl;
   // ---------- 树的直径 ---------
 
-  vector<vector<int>> edges;
+  // vector<vector<int>> edges;
 
-  vector<int> edge;
-  edge.push_back(0);
-  edge.push_back(1);
-  edges.push_back(edge);
+  // vector<int> edge;
+  // edge.push_back(0);
+  // edge.push_back(1);
+  // edges.push_back(edge);
 
-  edge = vector<int>();
-  edge.push_back(1);
-  edge.push_back(2);
-  edges.push_back(edge);
+  // edge = vector<int>();
+  // edge.push_back(1);
+  // edge.push_back(2);
+  // edges.push_back(edge);
 
-  edge = vector<int>();
-  edge.push_back(2);
-  edge.push_back(3);
-  edges.push_back(edge);
+  // edge = vector<int>();
+  // edge.push_back(2);
+  // edge.push_back(3);
+  // edges.push_back(edge);
 
-  edge = vector<int>();
-  edge.push_back(1);
-  edge.push_back(4);
-  edges.push_back(edge);
+  // edge = vector<int>();
+  // edge.push_back(1);
+  // edge.push_back(4);
+  // edges.push_back(edge);
 
-  edge = vector<int>();
-  edge.push_back(4);
-  edge.push_back(5);
-  edges.push_back(edge);
+  // edge = vector<int>();
+  // edge.push_back(4);
+  // edge.push_back(5);
+  // edges.push_back(edge);
 
-  TreeDiameter td;
-  int i = td.treeDiameter(edges);
+  // TreeDiameter td;
+  // int i = td.treeDiameter(edges);
 
-  cout << i << endl;
+  // cout << i << endl;
   // ----------- 自己实现 unordered_map ------------
 
   // HashMap<int, int, HashFunc> hashmap(10);
