@@ -80,12 +80,11 @@ int main()
 
   // 初始只有一头牛。牛只有6年的生命(第0年出生，第6年死去)，牛第3年和第5年会生小牛。问：初始只有一只牛，求第n年牛的个数
   NumberofCattle nc;
-  int y = 11;
+  int y = 10;
   cout << "ab" << endl;
   int ca = nc.numberofNattle(y);
   cout << ca << endl;
 
-  cout << "aa" << endl;
   // ---------- 树的直径 ---------
 
   // vector<vector<int>> edges;
