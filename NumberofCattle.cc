@@ -35,7 +35,7 @@ class NumberofCattle {
                 }
                 else
                 {
-                    cout << cattles[i - 1] <<  endl;
+                    
                     new_cattles[i] = cattles[i - 1];
                 }
             }
