@@ -22,3 +22,12 @@ Test data structrue
 - 78 子集 77 组合 46 全排列 226 翻转二叉树  98 验证二叉搜索树 104 二叉树的最大深度
 
 -  50 计算x的n次幂函数  hard 22 括号生成
+
+## 第七课
+
+- 电话号码的字母组合 leetcode 17 https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
+
+- N皇后 leetcode 51 https://leetcode-cn.com/problems/n-queens
+
+- 岛屿数量 leetcode 200 https://leetcode-cn.com/problems/number-of-islands
+
