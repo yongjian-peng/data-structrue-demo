@@ -31,3 +31,9 @@ Test data structrue
 
 - 岛屿数量 leetcode 200 https://leetcode-cn.com/problems/number-of-islands
 
+### 作业
+- 爬楼梯 leetcode 70 https://leetcode-cn.com/problems/climbing-stairs/
+
+- 三角形最小路径和 leetcode 120 https://leetcode-cn.com/problems/triangle/
+
+- 最长递增子序列的个数 673 https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/
