@@ -37,3 +37,19 @@ Test data structrue
 - 三角形最小路径和 leetcode 120 https://leetcode-cn.com/problems/triangle/
 
 - 最长递增子序列的个数 673 https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/
+
+- 单词拆分 leetcode 139 https://leetcode-cn.com/problems/word-break/
+
+## 第八课
+
+- 买卖股票的最佳时机 leetcode 121 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+
+- 买卖股票的最佳时机2 leetcode2 122 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
+
+- 买卖股票的最佳时机3 leetcode2 123 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/
+
+- 买卖股票的最佳时机4 leetcode2 188 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/
+
+- 买卖股票的最佳时机含手续费 leetcode2 714 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+
+- 买卖股票的最佳时机含冷冻期 leetcode2 309 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/ 
