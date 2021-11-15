@@ -17,7 +17,7 @@ public:
         int inf = INX_MAX - 1;
         vector<int> opt = vector<int>(amount + 1);
         opt[0] = 0;
-        // 寻找代表 兑换 0 的 需要零枚
+        // 寻找代表 兑换 0 的 需要零枚 
         for (int i = 1; i <= amount; i++) {
             opt[i] = inf;
             for (int j = 0; j < coins.size(); j++) {
