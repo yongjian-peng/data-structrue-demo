@@ -53,3 +53,13 @@ Test data structrue
 - 买卖股票的最佳时机含手续费 leetcode2 714 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 
 - 买卖股票的最佳时机含冷冻期 leetcode2 309 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/ 
+
+- 打家劫舍 leetcode 198 https://leetcode-cn.com/problems/house-robber/
+
+- 打家劫舍 leetcode 213 https://leetcode-cn.com/problems/house-robber-ii/
+
+- 编辑距离 leetcode 72 https://leetcode-cn.com/problems/edit-distance/
+
+- 分割等和子集 leetcode 416 https://leetcode-cn.com/problems/partition-equal-subset-sum/
+
+- 零钱兑换2 leetcode 518 https://leetcode-cn.com/problems/coin-change-2/
