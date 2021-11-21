@@ -56,10 +56,36 @@ Test data structrue
 
 - 打家劫舍 leetcode 198 https://leetcode-cn.com/problems/house-robber/
 
-- 打家劫舍 leetcode 213 https://leetcode-cn.com/problems/house-robber-ii/
+- 打家劫舍2 leetcode 213 https://leetcode-cn.com/problems/house-robber-ii/
 
 - 编辑距离 leetcode 72 https://leetcode-cn.com/problems/edit-distance/
 
 - 分割等和子集 leetcode 416 https://leetcode-cn.com/problems/partition-equal-subset-sum/
 
 - 零钱兑换2 leetcode 518 https://leetcode-cn.com/problems/coin-change-2/
+
+### 动态规划三
+
+-  满足不等式的最大值 leetcode 1499 https://leetcode-cn.com/problems/max-value-of-equation/ 二维坐标
+
+-  环形子数组的最大和 leetcode 918 https://leetcode-cn.com/problems/maximum-sum-circular-subarray/
+
+- 戳气球 leetcode 312 https://leetcode-cn.com/problems/burst-balloons/
+
+- 合并石头的最低成本 leetcode 1000 https://leetcode-cn.com/problems/minimum-cost-to-merge-stones/
+
+- 打家劫舍3 leetcode 337 https://leetcode-cn.com/problems/house-robber-iii/
+
+### 作业
+
+- 完全平方数 leetcode 279 https://leetcode-cn.com/problems/perfect-squares/
+
+- 跳跃游戏 leetcode 55 https://leetcode-cn.com/problems/jump-game/ 使用 DP 解法
+
+- 跳跃游戏 II leetcode 45 https://leetcode-cn.com/problems/jump-game-ii/
+
+- 最长回文子序列 leetcode 516 https://leetcode-cn.com/problems/longest-palindromic-subsequence/
+
+- 二叉树中的最大路径和 leetcode 124 https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/
+
+- 最小路径和 leetcode 64 https://leetcode-cn.com/problems/minimum-path-sum/
