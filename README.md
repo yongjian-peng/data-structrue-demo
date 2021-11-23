@@ -89,3 +89,10 @@ Test data structrue
 - 二叉树中的最大路径和 leetcode 124 https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/
 
 - 最小路径和 leetcode 64 https://leetcode-cn.com/problems/minimum-path-sum/
+
+## 第八周 字典树、并查集，图论算法
+
+- 208. 实现 Trie (前缀树) leetcode https://leetcode-cn.com/problems/implement-trie-prefix-tree/
+
+- 212. 单词搜索 II leetcode https://leetcode-cn.com/problems/word-search-ii/
+
