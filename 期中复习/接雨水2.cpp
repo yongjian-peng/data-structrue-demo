@@ -14,37 +14,32 @@ using namespace std;
 
 class Solution
 {
-    // 题解 单调队列
+    // 题解 单调队列 接雨水 款 * 高 得到面积 
 
 public:
     int trap(vector<int>& heights) {
-        // 维护一个递减的这个底的形状 柱子的形状递减的这样的一个单调栈
-        // 水的面积应该是累加宽度乘上二者的较小者（前一个、后一个较小者）
-        // 已一个固定的底 它两侧能扩展多远 来了一个更高的块 挡住就扩展不了
-        // 需要我们的把底着栈顶的底高度记录下来
         int ans = 0;
+
         for (int height : heights) {
             int accmulateWidht = 0;
             while (!s.empty() && s.top().height <= height) {
                 int bottom = s.top().height;
                 accmulateWidht += s.top().width;
                 s.pop();
-                // 以 bottom 为底的横块水 最高可以到 up（左右两侧高度的 min）
-                if (s.empty())
-                    continue;
+                if (s.empty()) continue;
                 int up = min(height, s.top().height);
                 ans += accmulateWidht * (up - bottom);
             }
+
             s.push({accmulateWidht + 1, height});
         }
         return ans;
     }
 
 private:
-    struct Rect {
+    struct Rect{
         int width;
         int height;
     };
-    // 单调栈
     stack<Rect> s;
 };

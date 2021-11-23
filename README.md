@@ -90,9 +90,17 @@ Test data structrue
 
 - 最小路径和 leetcode 64 https://leetcode-cn.com/problems/minimum-path-sum/
 
-## 第八周 字典树、并查集，图论算法
+## 第八周 15、16课 字典树、并查集，图论算法
 
 - 208. 实现 Trie (前缀树) leetcode https://leetcode-cn.com/problems/implement-trie-prefix-tree/
 
 - 212. 单词搜索 II leetcode https://leetcode-cn.com/problems/word-search-ii/
+
+- 547. 省份数量 leetcode https://leetcode-cn.com/problems/number-of-provinces/ 
+
+- 130. 被围绕的区域 leetcode https://leetcode-cn.com/problems/surrounded-regions/
+
+- 145. 超市 acwing https://www.acwing.com/problem/content/description/147/
+
+- 743. 网络延迟时间 leetcode https://leetcode-cn.com/problems/network-delay-time/
 
