@@ -89,3 +89,11 @@ Test data structrue
 - 二叉树中的最大路径和 leetcode 124 https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/
 
 - 最小路径和 leetcode 64 https://leetcode-cn.com/problems/minimum-path-sum/
+
+## 第八周 15、16课 字典树、并查集，图论算法
+
+- 547. 省份数量 leetcode https://leetcode-cn.com/problems/number-of-provinces/ 
+
+- 130. 被围绕的区域 leetcode https://leetcode-cn.com/problems/surrounded-regions/
+
+- 145. 超市 acwing https://www.acwing.com/problem/content/description/147/
