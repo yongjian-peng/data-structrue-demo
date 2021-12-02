@@ -104,3 +104,8 @@ Test data structrue
 
 - 743. 网络延迟时间 leetcode https://leetcode-cn.com/problems/network-delay-time/
 
+## 第九周 第17、18课 字符串处理，高级搜索
+
+- 28. 实现 strStr() leetcode https://leetcode-cn.com/problems/implement-strstr/
+
+- 
