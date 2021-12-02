@@ -117,6 +117,40 @@ Test data structrue
 
 ## 第九周 第17、18课 字符串处理，高级搜索
 
-- 28. 实现 strStr() leetcode https://leetcode-cn.com/problems/implement-strstr/
+- 8. 字符串转换整数 (atoi) leetcode https://leetcode-cn.com/problems/string-to-integer-atoi/
 
-- 
+- 28. 实现 strStr() leetcode https://leetcode-cn.com/problems/implement-strstr/
+    使用 KMP 算法 和 Rabin-Karp 算法
+
+- 686. 重复叠加字符串匹配 leetcode https://leetcode-cn.com/problems/repeated-string-match/
+
+- 125. 验证回文串 leetcode https://leetcode-cn.com/problems/valid-palindrome/
+
+- 680. 验证回文字符串 Ⅱ leetcode https://leetcode-cn.com/problems/valid-palindrome-ii/
+
+- 5. 最长回文子串 leetcode https://leetcode-cn.com/problems/longest-palindromic-substring/
+
+- 10. 正则表达式匹配 leetcode https://leetcode-cn.com/problems/regular-expression-matching/
+
+- 115. 不同的子序列 leetcode https://leetcode-cn.com/problems/distinct-subsequences/
+
+- 22. 括号生成 leetcode https://leetcode-cn.com/problems/generate-parentheses/
+
+- 51. N 皇后 leetcode https://leetcode-cn.com/problems/n-queens/
+
+- 36. 有效的数独 leetcode https://leetcode-cn.com/problems/valid-sudoku/
+
+- 37. 解数独 leetcode https://leetcode-cn.com/problems/sudoku-solver/
+
+- 127. 单词接龙 leetcode https://leetcode-cn.com/problems/word-ladder/
+
+- 773. 滑动谜题 leetcode https://leetcode-cn.com/problems/sliding-puzzle/
+
+- 845. 八数码 acwing https://www.acwing.com/problem/content/847/
+
+- 179. 八数码 acwing https://www.acwing.com/problem/content/181/
+
+
+
+
+
