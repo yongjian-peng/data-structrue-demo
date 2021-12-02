@@ -13,7 +13,7 @@ class Solution
 {
     /**
      * 题解：使用 trid 树 搜索引擎中的智能提示 功能补全功能
-     * 
+     * 优化：如果全部都是一样的字符串，则可以使用删除节点的方法。
      */
 public:
     vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {

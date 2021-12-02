@@ -102,5 +102,16 @@ Test data structrue
 
 - 145. 超市 acwing https://www.acwing.com/problem/content/description/147/
 
-- 743. 网络延迟时间 leetcode https://leetcode-cn.com/problems/network-delay-time/
+- 743. 网络延迟时间 leetcode https://leetcode-cn.com/problems/network-delay-time/ Dijkstra 算法求解
+
+- 1334. 阈值距离内邻居最少的城市 leetcode https://leetcode-cn.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/ Froyd 算法 先阶段 再状态 再决策 阶段是中继点
+
+- 850. Dijkstra求最短路 acwing  II https://www.acwing.com/problem/content/description/852/ 当前点中寻找还没有走过的点最短的路，标记成已走过
+
+1584. 连接所有点的最小费用 leetcode https://leetcode-cn.com/problems/min-cost-to-connect-all-points/ 使用 Kruskal 算法  贪心 + 并查集 求所有点的最短路径
+
+## 第九周 第17、18课 字符串处理、高级搜索
+
+- 709. 转换成小写字母 leetcode https://leetcode-cn.com/problems/to-lower-case/
+
 
