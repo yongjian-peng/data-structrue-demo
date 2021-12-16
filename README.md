@@ -150,6 +150,81 @@ Test data structrue
 
 - 179. 八数码 acwing https://www.acwing.com/problem/content/181/
 
+## 第十周 20课 树状数组与线段树 21课 实战技巧、总结和回顾
+
+- 307. 区域和检索 - 数组可修改 leetcode https://leetcode-cn.com/problems/range-sum-query-mutable/
+
+- 327. 区间和的个数 leetcode https://leetcode-cn.com/problems/count-of-range-sum/ lowbit
+
+- 243. 一个简单的整数问题2 acwing https://www.acwing.com/problem/content/description/244/
+
+- 191. 位1的个数 leetcode https://leetcode-cn.com/problems/number-of-1-bits/
+
+- 231. 2 的幂 leetcode https://leetcode-cn.com/problems/power-of-two/
+
+- 190. 颠倒二进制位 leetcode https://leetcode-cn.com/problems/reverse-bits/
+
+- 338. 比特位计数 leetcode https://leetcode-cn.com/problems/counting-bits/
+
+- 50. Pow(x, n) leetcode https://leetcode-cn.com/problems/powx-n/
+
+- 51. N 皇后 leetcode https://leetcode-cn.com/problems/n-queens/
+
+- 37. 解数独 leetcode https://leetcode-cn.com/problems/sudoku-solver/
+
+- 218. 天际线问题 leetcode https://leetcode-cn.com/problems/the-skyline-problem/
+
+- 1851. 包含每个查询的最小区间 leetcode https://leetcode-cn.com/problems/minimum-interval-to-include-each-query/
+
+## 作业
+
+- 239. 滑动窗口最大值 leetcode https://leetcode-cn.com/problems/sliding-window-maximum/
+
+- 136. 邻值查找 acwing https://www.acwing.com/problem/content/138/
+
+- 1206. 设计跳表 leetcode https://leetcode-cn.com/problems/design-skiplist/
+
+- 253. 普通平衡树 acwing https://www.acwing.com/problem/content/description/255/
+
+- 699. 掉落的方块 leetcode https://leetcode-cn.com/problems/falling-squares/
+
+
+总结：
+平衡树 跳跃表
+
+高级搜索
+
+字符串 Rabin-Karp算法（计算字符串二进制的hash）KMP算法 搜索串的处理 next
+
+16 图论算法 Bellman-Ford 算法 Dijkstra 算法 Floyd 算法 最小生成树 Kruskal算法
+
+15 字典树 并查集 搜索提示（自动补全）
+
+14 动态规划三 动态规划的优化 区间动态规划 树形动态规划
+
+13 动态规划二 复杂一些的线性动态规划：买卖股票系列问题 复杂一些的线性DP实战 背包 滚动数组
+
+12 动态规划一 动态规划总论：状态设计的要点和技巧 简单的线性动态规划 最长公共子序列 LCS 最长上升子序列 LIS 动态规划打印方案
+
+11 贪心 贪心理论与常见的证明方法 贪心题目实战 零钱兑换 分发饼干 跳跃游戏
+
+10 排序 其他排序算法 不同排序算法的适合场景 第k大数 中位数 逆序对
+
+9 二分搜索 二分查找 三分查找 二分答案 最优性问题转化为判定问题的基本技巧
+
+8 二叉堆、二叉搜索树 滑动窗口最大值 BST 求前驱 求后继
+
+7 深度优先搜索 广度优先搜索 状态与状态空间 DFS BFS
+
+6 树与图 基环树 拓扑排序 二叉树 树的遍历 图的遍历 最近公共祖先 LCA
+
+5 递归分治 递归的本质与基本实现形式，分治：子问题的划分与合并
+
+4 前缀和、差分、双指针扫描 
+
+
+当时觉得学到了深度广度搜索后，就已经很不错了。学完了才知道 后面的更精彩，更有难度，是体会到的难度，说的听的，和体会的到的 不是一个概念的。就像事情一样，没有发生在自己身上没有感觉。就像爬山一样，没有爬到最后，不清楚途中有多少好多风景。后期会把算法当作一种兴趣来练习。就像玩魔方一样的兴趣。
+
 
 
 
