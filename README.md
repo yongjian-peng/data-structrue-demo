@@ -1,13 +1,37 @@
 # data-structrue-demo
 Test data structrue
 
-## 第一课 作业  
+## 第一周 数组、链表、栈、队列  
 
-- leetcode 题目  合并有序数组 去重 移动零 
+- 88. 合并两个有序数组 leetcode https://leetcode-cn.com/problems/merge-sorted-array/
 
-- 206 反转链表  25 k个一组反转链表 141 环形链表 142 环形链表2   
+- 26. 删除有序数组中的重复项 leetcode https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 
-- 20 有效的括号 155 最小栈 150 逆波兰表达式求值 226 基本计算器 
+- 283. 移动零 leetcode https://leetcode-cn.com/problems/move-zeroes/
+
+- 206. 反转链表 leetcode https://leetcode-cn.com/problems/reverse-linked-list/
+
+- 25. K 个一组翻转链表 leetcode https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
+
+- 136. 邻值查找 acwing https://www.acwing.com/problem/content/description/138/
+
+- 141. 环形链表 leetcode https://leetcode-cn.com/problems/linked-list-cycle/
+
+- 142. 环形链表 II leetcode https://leetcode-cn.com/problems/linked-list-cycle-ii/
+
+- 20. 有效的括号 leetcode https://leetcode-cn.com/problems/valid-parentheses/
+
+- 155. 最小栈 leetcode https://leetcode-cn.com/problems/min-stack/
+
+- 150. 逆波兰表达式求值 leetcode https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/
+
+- 224. 基本计算器 leetcode https://leetcode-cn.com/problems/basic-calculator/
+
+- 84. 柱状图中最大的矩形 leetcode https://leetcode-cn.com/problems/largest-rectangle-in-histogram/
+
+- 239. 滑动窗口最大值 leetcode https://leetcode-cn.com/problems/sliding-window-maximum/
+
+- 42. 接雨水 leetcode https://leetcode-cn.com/problems/trapping-rain-water/
 
 ## 第二课 
 
@@ -16,6 +40,16 @@ Test data structrue
 - 167 两数之和2 1 两数之和 15 三数之和  11 盛最多的水 84 柱状图中最大的矩形
 
 - 239 滑动窗口最大值 
+
+### 作业
+
+- 66. 加一 leetcode https://leetcode-cn.com/problems/plus-one/
+
+- 21. 合并两个有序链表 leetcode https://leetcode-cn.com/problems/merge-two-sorted-lists/
+
+- 641. 设计循环双端队列 leetcode https://leetcode-cn.com/problems/design-circular-deque/
+
+- 85. 最大矩形 leetcode https://leetcode-cn.com/problems/maximal-rectangle/
 
 ## 第三课 递归分治 
 
