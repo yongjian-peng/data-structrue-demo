@@ -20,7 +20,7 @@
 #include "stdc++.h"
 #include "Calculate.cc"
 #include "LargestRectangleArea.cc"
-#include "Trap.cc"
+// #include "Trap.cc"
 #include "LargestRectangleArea2.cc"
 #include "LargestRectangleArea3.cc"
 #include "MaximalRectangle.cc"
@@ -29,6 +29,7 @@
 #include "TreeDiameter.cc"
 #include "MaxFreq.cc"
 #include "NumberofCattle.cc"
+#include "week01/Learn01.cc"
 
 using namespace std;
 
@@ -63,6 +64,10 @@ void DeleteNode(NodeL* node)
 
 int main()
 {
+
+  // 分层
+  Learn01 Learn01;
+  Learn01.learn01();
 
   // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，
   // 如果存在多个字母并列出现次数最高，则需要把全部都列举出来
@@ -157,7 +162,7 @@ int main()
   // ------------- 二维矩阵最大矩形 ------------
 
   // ----------- 接雨滴 ---------------
-  // 横条解题 单调栈
+  // // 横条解题 单调栈
   // Trap trap;
   // LargestRectangleArea2 lra2;
   // int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
@@ -185,11 +190,11 @@ int main()
   // cout << cal.calculat(s) << endl;
   // cout << "hsh" << endl;
   // ----------- 邻值查找 ---------------
-  cin >> n;
-  for (int i = 1; i <= n; i++) { // i = 0
-    scanf("%d", &a[i]);
-    rk[i] = i;
-  }
+  // cin >> n;
+  // for (int i = 1; i <= n; i++) { // i = 0
+  //   scanf("%d", &a[i]);
+  //   rk[i] = i;
+  // }
 
   // rk 的 含义：rank[i] 表示排第i名的是谁（是哪个下标）？
   // 有序序列是：a[rk[1]], a[rk[2]], ... a[rk[n]]
@@ -200,30 +205,30 @@ int main()
   // sort(rk + 1, rk + n + 1, [&](int rki, int rkj) { return a[rki] < a[rkj]; });
 
   // 保护节点
-  NodeL head;
-  NodeL tail;
-  head.next = &tail;
-  tail.pre = &head;
-  head.val = a[rk[1]] - 1e9;
-  tail.val = a[rk[n]] + 1e9;
-  for (int i = 1; i <= n; i++) {
-    // 数值：a[rk[i]], 下标 rk[i]
-    pos[rk[i]] = AddNode(tail.pre, rk[i]);
-  }
-  for (int i = n; i > 1; i--) {
-    NodeL* curr = pos[i];
-    // 前驱 后继
-    if (a[i] - curr->pre->val <= curr->next->val - a[i]) {
-      ans[i] = curr->pre->idx;
-    } else {
-      ans[i] = curr->next->idx;
-    }
-    DeleteNode(curr);
-  }
+  // NodeL head;
+  // NodeL tail;
+  // head.next = &tail;
+  // tail.pre = &head;
+  // head.val = a[rk[1]] - 1e9;
+  // tail.val = a[rk[n]] + 1e9;
+  // for (int i = 1; i <= n; i++) {
+  //   // 数值：a[rk[i]], 下标 rk[i]
+  //   pos[rk[i]] = AddNode(tail.pre, rk[i]);
+  // }
+  // for (int i = n; i > 1; i--) {
+  //   NodeL* curr = pos[i];
+  //   // 前驱 后继
+  //   if (a[i] - curr->pre->val <= curr->next->val - a[i]) {
+  //     ans[i] = curr->pre->idx;
+  //   } else {
+  //     ans[i] = curr->next->idx;
+  //   }
+  //   DeleteNode(curr);
+  // }
 
-  for (int i = 2; i <= n; i++) {
-    printf("%d %d\n", abs(a[ans[i]] - a[i]), ans[i]); // a[ans[i] - a[i]]
-  }
+  // for (int i = 2; i <= n; i++) {
+  //   printf("%d %d\n", abs(a[ans[i]] - a[i]), ans[i]); // a[ans[i] - a[i]]
+  // }
 
   // ----------- Learn priority_queue 优先队列 ---------------
   // 对于基础类型，默认时大顶堆
