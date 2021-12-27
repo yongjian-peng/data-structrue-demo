@@ -1,4 +1,4 @@
-#include "stdc++.h"
+#include "../stdc++.h"
 
 using namespace std;
   // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，

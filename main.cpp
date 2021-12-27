@@ -21,13 +21,13 @@
 #include "Calculate.cc"
 #include "LargestRectangleArea.cc"
 // #include "Trap.cc"
-#include "LargestRectangleArea2.cc"
+
 #include "LargestRectangleArea3.cc"
 #include "MaximalRectangle.cc"
 #include "MapDemo.cc"
 #include "HashMap.cc"
 #include "TreeDiameter.cc"
-#include "MaxFreq.cc"
+// #include "MaxFreq.cc"
 #include "NumberofCattle.cc"
 #include "week01/Learn01.cc"
 
@@ -67,21 +67,10 @@ int main()
 
   // 分层
   Learn01 Learn01;
-  Learn01.learn01();
-
-  // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，
-  // 如果存在多个字母并列出现次数最高，则需要把全部都列举出来
+  Learn01.learn01(); // 
 
   // dasdfdsdfgdeeeeffffggf
-  // string str = "dasdfdsdfgdeeeeffffggf";
-
-  // MaxFreq mf;
-  // vector<string> ans;
-  // ans = mf.maxFreq(str);
-
-  // for (string& s : ans) {
-  //   cout << s << endl;
-  // }
+  Learn01.maxFreq();
 
   // 初始只有一头牛。牛只有6年的生命(第0年出生，第6年死去)，牛第3年和第5年会生小牛。问：初始只有一只牛，求第n年牛的个数
   // NumberofCattle nc;
