@@ -1,6 +1,5 @@
-#include "stdc++.h"
+#include "../stdc++.h"
 
-using namespace std;
 
 class Trap {
     public:

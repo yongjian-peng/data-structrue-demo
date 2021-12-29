@@ -1,7 +1,5 @@
 #include "../stdc++.h"
 
-using namespace std;
-
 class LargestRectangleArea2 {
     public:
     int largestRectangleArea2(vector<int>& heights) {

@@ -1,5 +1,5 @@
-#include "stdc++.h"
-using namespace std;
+#include "../stdc++.h"
+
 
 class Calculate {
     public:

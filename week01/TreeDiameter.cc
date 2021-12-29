@@ -1,6 +1,6 @@
-#include "stdc++.h"
+#include "../stdc++.h"
 
-using namespace std;
+// using namespace std;
 
 class TreeDiameter {
 public:
