@@ -25,15 +25,18 @@
 // #include "TreeDiameter.cc"
 // #include "MaxFreq.cc"
 
-#include "week01/CallFunction01.cc"
+//#include "week01/CallFunction01.cc"
+#include "week01/Learn01.cc"
 #include "week02/CallFunction02.cc"
 
 using namespace std;
 
 int main()
 {
-  CallFunction01 CallFunction01;
-  CallFunction01.callFunction();
+  Learn01 learn01;
+  learn01.main();
+  // CallFunction01 CallFunction01;
+  // CallFunction01.callFunction();
 
   // CallFunction02 CallFunction02;
   // CallFunction02.callFunction();

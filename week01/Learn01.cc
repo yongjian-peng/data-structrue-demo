@@ -15,19 +15,29 @@
 
 #include "Calculate.cc"
 
+#include "MergeTwoArray.cc"
+
+#include "RemoveDuplicates.cc"
+
 #include "../stdc++.h"
 
 class Learn01 {
     public:
+        int main() {
+            // 删除数组中 重复的项
+            RemoveDuplicates removeDuplicates;
+            int r = removeDuplicates.main();
+            // 合并两个数组
+            MergeTwoArray mergeTwoArray;
+            mergeTwoArray.main();
+            return 0;
+        }
+
         int learn01() {
             // 横条解题 单调栈
             Trap trap;
             LargestRectangleArea2 lra2;
-            int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-            vector<int> hei(heights, heights + 12);
-            cout << trap.trap(hei) << endl;
-            // 竖条解题 维护前缀 后缀 最大值
-            cout << trap.trapheight(hei) << endl;
+            trap.main();
             return 0;
         }
         // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，
@@ -146,15 +156,15 @@ class Learn01 {
         int trap() {
             // ----------- 接雨滴 ---------------
             // 横条解题 单调栈
-            Trap trap;
-            LargestRectangleArea2 lra2;
-            int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-            vector<int> hei(heights, heights + 12);
-            cout << trap.trap(hei) << endl;
-            // 竖条解题 维护前缀 后缀 最大值
-            cout << trap.trapheight(hei) << endl;
-            cout << lra2.largestRectangleArea2(hei) << endl;
-            return 0;
+            // Trap trap;
+            // LargestRectangleArea2 lra2;
+            // int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+            // vector<int> hei(heights, heights + 12);
+            // cout << trap.trap(hei) << endl;
+            // // 竖条解题 维护前缀 后缀 最大值
+            // cout << trap.trapheight(hei) << endl;
+            // cout << lra2.largestRectangleArea2(hei) << endl;
+            // return 0;
         }
 
         int lra() {
@@ -419,6 +429,22 @@ class Learn01 {
             //   cerr << "Exception:" << ex.what() << endl;
             //   return -1;
             // }
+            return 0;
+        }
+
+        int mergeTwoArray() {
+            // MergeTwoArray mergeTwoArray;
+
+            // vector<int> nums1({1,2,3,0,0,0} );
+            // int m = 3;
+            // vector<int> nums2({2, 5, 6} );
+            // int n = 3;
+            // mergeTwoArray.mergeTwoArray(nums1, m, nums2, n);
+
+            // for(int i : nums1) {
+            //     cout << i << endl;
+            // }
+
             return 0;
         }
 };

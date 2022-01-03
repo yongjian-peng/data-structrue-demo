@@ -9,6 +9,8 @@ class CallFunction01 {
             Learn01 Learn01;
             // Learn01.learn01(); //
 
+            Learn01.main();
+
             // dasdfdsdfgdeeeeffffggf
             // Learn01.maxFreq();
 
@@ -16,13 +18,15 @@ class CallFunction01 {
 
             // Learn01.neighborSearch(); // 邻值查找
 
-            Learn01.numberofCattle(); // n年后牛的数量
+            // Learn01.numberofCattle(); // n年后牛的数量
 
             // Learn01.trap(); // 接雨滴
 
             // Learn01.lra(); // 柱状图中最大矩形
 
             // Learn01.calculate(); // 计算器
+
+            // Learn01.mergeTwoArray(); // 合并两个有序数组
 
             return 0;
         }
