@@ -25,19 +25,19 @@ class Learn01 {
     public:
         int main() {
             // 删除数组中 重复的项
-            RemoveDuplicates removeDuplicates;
-            int r = removeDuplicates.main();
+            // RemoveDuplicates removeDuplicates;
+            // int r = removeDuplicates.main();
             // 合并两个数组
-            MergeTwoArray mergeTwoArray;
-            mergeTwoArray.main();
-            return 0;
-        }
+            // MergeTwoArray mergeTwoArray;
+            // mergeTwoArray.main();
+            // 邻值查找
+            // NeighborSearch NeighborSearch;
+            // NeighborSearch.neighborSearch();
 
-        int learn01() {
             // 横条解题 单调栈
-            Trap trap;
-            LargestRectangleArea2 lra2;
-            trap.main();
+            // Trap trap;
+            // LargestRectangleArea2 lra2;
+            // trap.main();
             return 0;
         }
         // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，
@@ -109,12 +109,6 @@ class Learn01 {
                 ans += i;
             }
             cout << ans << endl;
-            return 0;
-        }
-
-        int neighborSearch() {
-            NeighborSearch NeighborSearch;
-            NeighborSearch.neighborSearch();
             return 0;
         }
 
