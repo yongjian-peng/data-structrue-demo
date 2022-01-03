@@ -1,4 +1,4 @@
-#include "../Trap.cc"
+#include "./Trap.cc"
 #include "MaxFreq.cc"
 #include "LargestRectangleArea2.cc"
 #include "TreeDiameter.cc"
@@ -14,6 +14,8 @@
 #include "LargestRectangleArea3.cc"
 
 #include "Calculate.cc"
+
+#include "../stdc++.h"
 
 class Learn01 {
     public:
@@ -82,50 +84,62 @@ class Learn01 {
         int numberofCattle() {
             // 初始只有一头牛。牛只有6年的生命(第0年出生，第6年死去)，牛第3年和第5年会生小牛。问：初始只有一只牛，求第n年牛的个数
             NumberofCattle nc;
-            int y = 10;
+            int year = 1;
+
+            vector<int> arr(7, 0);
+            arr[0] = 1;
+
+            int current = 15;
             cout << "ab" << endl;
-            int ca = nc.numberofNattle(y);
-            cout << ca << endl;
+            vector<int> ca = nc.numberofNattle(arr, year, current);
+            int ans = 0;
+            
+
+            for (int i : ca) {
+                ans += i;
+            }
+            cout << ans << endl;
             return 0;
         }
 
         int neighborSearch() {
             NeighborSearch NeighborSearch;
             NeighborSearch.neighborSearch();
+            return 0;
         }
-        
+
         int lenmap() {
             // ----------- 自己实现 unordered_map ------------
 
-            HashMap<int, int, HashFunc> hashmap(10);
-            hashmap.insert(1, 1);
-            hashmap.insert(11, 5);
-            hashmap.print();
-            cout << "----------" << endl;
-            hashmap.insert(2, 8);
-            int num = 1;
-            hashmap.del(num);//删除键值为1的
-            hashmap.print();
-            system("pause");
+            // HashMap<int, int, HashFunc> hashmap(10);
+            // hashmap.insert(1, 1);
+            // hashmap.insert(11, 5);
+            // hashmap.print();
+            // cout << "----------" << endl;
+            // hashmap.insert(2, 8);
+            // int num = 1;
+            // hashmap.del(num);//删除键值为1的
+            // hashmap.print();
+            // system("pause");
 
-            HashMap<int, string> map;
-            map.insert({1010, "wu"});
-            map.insert({1020, "fan"});
-            map.insert({1030, "love"});
-            map.insert({1040, "yan"});
-            map.insert({1050, "han"});
+            // HashMap<int, string> map;
+            // map.insert({1010, "wu"});
+            // map.insert({1020, "fan"});
+            // map.insert({1030, "love"});
+            // map.insert({1040, "yan"});
+            // map.insert({1050, "han"});
 
-            cout << map[1030] << endl;
+            // cout << map[1030] << endl;
             // map.erase(1010);
-            Pair<int, string> *it = map.find(1010);
-            if (it == nullptr)
-            {
-              cout << "not find" << endl;
-            }
-            else
-            {
-              cout << it->first << endl;
-            }
+            // Pair<int, string> *it = map.find(1010);
+            // if (it == nullptr)
+            // {
+            //   cout << "not find" << endl;
+            // }
+            // else
+            // {
+            //   cout << it->first << endl;
+            // }
             return 0;
         }
 

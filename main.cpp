@@ -35,8 +35,8 @@ int main()
   CallFunction01 CallFunction01;
   CallFunction01.callFunction();
 
-  CallFunction02 CallFunction02;
-  CallFunction02.callFunction();
+  // CallFunction02 CallFunction02;
+  // CallFunction02.callFunction();
 
   // --------- 统计优美子数组 ----------
   // NumberOfSubarrays ns;

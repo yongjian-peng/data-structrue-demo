@@ -12,11 +12,11 @@ class CallFunction01 {
             // dasdfdsdfgdeeeeffffggf
             // Learn01.maxFreq();
 
-            Learn01.treeDiameter(); // 树的直径
+            // Learn01.treeDiameter(); // 树的直径
 
-            Learn01.neighborSearch(); // 邻值查找
+            // Learn01.neighborSearch(); // 邻值查找
 
-            // Learn01.numberofCattle(); // n年后牛的数量
+            Learn01.numberofCattle(); // n年后牛的数量
 
             // Learn01.trap(); // 接雨滴
 
