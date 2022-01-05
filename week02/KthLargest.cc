@@ -1,7 +1,34 @@
 #include <iostream>
-#include "Default.h"
+#include "../Default.h"
 
 using namespace std;
+
+
+int runKthLargest() {
+    // -------- 动态查找 第 k 大元素 ----------
+    /* Let us create following BST
+                50
+             /     \
+            30      70
+           /  \    /  \
+         20   40  60   80 */
+    Node *root = NULL;
+    root = insert(root, 50);
+    insert(root, 30);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 70);
+    insert(root, 60);
+    insert(root, 80);
+
+    int c = 0;
+    kthLargest(root, 6);
+    for (int k = 1; k <= 7; k++)
+    {
+        kthLargest(root, k);
+    }
+    return 0;
+}
 
 void kthLargestUtil(Node *root, int k, int &c)
 {

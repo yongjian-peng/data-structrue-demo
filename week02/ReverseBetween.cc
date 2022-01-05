@@ -1,10 +1,34 @@
 #include <iostream>
-#include "Default.h"
+#include "../Default.h"
 
 using namespace std;
 
 class ReverseBetween {
     public:
+        int main() {
+            //  ---------------- 反转链表 输入 左 右 返回区间内反转 ------------------
+
+            ReverseBetween reb;
+            ListNode* one = new ListNode(1);
+            ListNode* two = new ListNode(2);
+            ListNode* three = new ListNode(3);
+            ListNode* four = new ListNode(4);
+            ListNode* five = new ListNode(5);
+            ListNode *six = new ListNode(6);
+
+            one->next = two;
+            two->next = three;
+            three->next = four;
+            four->next = five;
+            five->next = NULL;
+
+            //vector<int> pr = st.printListFromTailToHead(one);
+            ListNode* ss = reb.reverseBetween(one, 2, 4);
+            ShowList(ss);
+
+            cout << reb.reverseBetween(one, 1, 4) << endl;
+            return 0;
+        }
         ListNode *reverseBetween(ListNode *head, int left, int right) {
             // 设置 dummyNode 是这一类问题的一般做法
             ListNode *dummyNode = new ListNode(-1);

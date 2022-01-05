@@ -1,10 +1,24 @@
 #include <iostream>
 
+#include "Heapify.cc"
+
 using namespace std;
 
 class HeapSort
 {
     public:
+
+        int main() {
+            int arr[] = { 12, 11, 13, 5, 6, 7 };
+
+            int n = sizeof(arr) / sizeof(arr[0]);
+
+            heapSort(arr, n);
+
+            cout << "Sorted array is \n";
+            printArray(arr, n);
+            return 0;
+        }
         void heapify(int arr[], int n, int i)
         {
             int largest = i;

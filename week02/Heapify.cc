@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Default.h"
+#include "../Default.h"
 using namespace std;
 
 void heapify(int arr[], int n, int i) {

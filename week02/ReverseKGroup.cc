@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Default.h"
+#include "../Default.h"
 
 using namespace std;
 
@@ -32,7 +32,7 @@ class ReverseKGroup
             
             return protect->next;
         }
-    public:
+        
         ListNode* getEnd(ListNode* head, int k) {
             
             while (head != NULL)
