@@ -4,6 +4,14 @@ using namespace std;
 
 class LargestRectangleArea {
     public:
+        int main()
+        {
+            LargestRectangleArea lra;
+            int heights[] = {2, 1, 5, 6, 2, 3};
+            vector<int> hei(heights, heights + 6);
+            cout << lra.largestReactangleArea(hei) << endl;
+            return 0;
+        }
         int largestReactangleArea(vector<int>& heights) {
             // 最大矩形 宽度 高度
             // 高度 每个高度可以扩展的范围 更新高度 删除高度 增加宽度

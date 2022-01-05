@@ -5,6 +5,19 @@ using namespace std;
 
 class NumberOfSubarrays {
     public:
+    int main() {
+        // --------- 统计优美子数组 ----------
+        NumberOfSubarrays ns;
+
+        int arr[] = {1, 1, 0, 3, 1};
+
+        vector<int> nums(arr, arr + 5);
+
+        int s = 3;
+
+        cout << ns.numberOfSubarrays(nums, s) << endl;
+        return 0;
+    }
     int numberOfSubarrays(vector<int>& nums, int k) {
         // 开头插入一个0，转化成下标1~n
         int n = nums.size();

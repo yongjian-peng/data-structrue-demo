@@ -2,7 +2,6 @@
 #include "MaxFreq.cc"
 #include "LargestRectangleArea2.cc"
 #include "TreeDiameter.cc"
-// #include "../LargestRectangleArea2.cc"
 // using namespace std;
 
 #include "NumberofCattle.cc"
@@ -30,6 +29,7 @@ class Learn01 {
             // 合并两个数组
             // MergeTwoArray mergeTwoArray;
             // mergeTwoArray.main();
+            
             // 邻值查找
             // NeighborSearch NeighborSearch;
             // NeighborSearch.neighborSearch();
@@ -38,77 +38,34 @@ class Learn01 {
             // Trap trap;
             // LargestRectangleArea2 lra2;
             // trap.main();
-            return 0;
-        }
-        // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，
-        // 如果存在多个字母并列出现次数最高，则需要把全部都列举出来
-        string maxFreq() {
-            string str = "dasdfdsdfgdeeeeffffggf";
 
-            MaxFreq mf;
-            vector<string> ans;
-            ans = mf.maxFreq(str);
+            // LargestRectangleArea2 lra2;
+            // lra2.main();
 
-            for (string &s : ans)
-            {
-                cout << s << endl;
-            }
-            return "";
-        }
+            // 给出一串字符串，要求找出字符串内连续出现次数最高的字母，
+            // 如果存在多个字母并列出现次数最高，则需要把全部都列举出来
+            // MaxFreq mf;
+            // mf.main();
 
-        int treeDiameter() {
-            vector<vector<int>> edges;
+            // 树的直径
+            // TreeDiameter td;
+            // td.main();
 
-            vector<int> edge;
-            edge.push_back(0);
-            edge.push_back(1);
-            edges.push_back(edge);
-
-            edge = vector<int>();
-            edge.push_back(1);
-            edge.push_back(2);
-            edges.push_back(edge);
-
-            edge = vector<int>();
-            edge.push_back(2);
-            edge.push_back(3);
-            edges.push_back(edge);
-
-            edge = vector<int>();
-            edge.push_back(1);
-            edge.push_back(4);
-            edges.push_back(edge);
-
-            edge = vector<int>();
-            edge.push_back(4);
-            edge.push_back(5);
-            edges.push_back(edge);
-
-            TreeDiameter td;
-            int i = td.treeDiameter(edges);
-
-            cout << i << endl;
-            return 0;
-        }
-
-        int numberofCattle() {
             // 初始只有一头牛。牛只有6年的生命(第0年出生，第6年死去)，牛第3年和第5年会生小牛。问：初始只有一只牛，求第n年牛的个数
             NumberofCattle nc;
-            int year = 1;
+            nc.main();
 
-            vector<int> arr(7, 0);
-            arr[0] = 1;
+            // ----------- 柱状图中最大矩形 ----------
+            // LargestRectangleArea lra;
+            // lra.main();
 
-            int current = 15;
-            cout << "ab" << endl;
-            vector<int> ca = nc.numberofNattle(arr, year, current);
-            int ans = 0;
-            
+            // LargestRectangleArea3 Lra3;
+            // Lra3.main();
 
-            for (int i : ca) {
-                ans += i;
-            }
-            cout << ans << endl;
+            // ----------- 计算器 ------------
+            Calculate cal;
+            cal.main();
+
             return 0;
         }
 
@@ -147,43 +104,6 @@ class Learn01 {
             return 0;
         }
 
-        int trap() {
-            // ----------- 接雨滴 ---------------
-            // 横条解题 单调栈
-            // Trap trap;
-            // LargestRectangleArea2 lra2;
-            // int heights[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-            // vector<int> hei(heights, heights + 12);
-            // cout << trap.trap(hei) << endl;
-            // // 竖条解题 维护前缀 后缀 最大值
-            // cout << trap.trapheight(hei) << endl;
-            // cout << lra2.largestRectangleArea2(hei) << endl;
-            // return 0;
-        }
-
-        int lra() {
-            // ----------- 柱状图中最大矩形 ----------
-            LargestRectangleArea lra;
-            int heights[] = {2, 1, 5, 6, 2, 3};
-            vector<int> hei(heights, heights + 6);
-            cout << lra.largestReactangleArea(hei) << endl;
-
-            LargestRectangleArea3 Lra3;
-            int heights2[] = {2, 1, 5, 6, 2, 3};
-            vector<int> hei2(heights2, heights2 + 6);
-            cout << Lra3.largestRectangleArea3(hei2) << endl;
-        }
-
-        int calculate() {
-            // ----------- 计算器 ------------
-            Calculate cal;
-            string s = " 2-1 + 2 ";
-
-            cout << cal.calculat(s) << endl;
-            cout << "hsh" << endl;
-
-            return 0;
-        }
 
         int learn_priority_queue() {
             // ----------- Learn priority_queue 优先队列 ---------------
@@ -426,19 +346,4 @@ class Learn01 {
             return 0;
         }
 
-        int mergeTwoArray() {
-            // MergeTwoArray mergeTwoArray;
-
-            // vector<int> nums1({1,2,3,0,0,0} );
-            // int m = 3;
-            // vector<int> nums2({2, 5, 6} );
-            // int n = 3;
-            // mergeTwoArray.mergeTwoArray(nums1, m, nums2, n);
-
-            // for(int i : nums1) {
-            //     cout << i << endl;
-            // }
-
-            return 0;
-        }
 };

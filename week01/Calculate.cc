@@ -3,6 +3,17 @@
 
 class Calculate {
     public:
+        int main()
+        {
+            // ----------- 计算器 ------------
+            Calculate cal;
+            string s = " 2-1 + 2 ";
+
+            cout << cal.calculat(s) << endl;
+            cout << "hsh" << endl;
+
+            return 0;
+        }
         int calculat(string s) {
             // 看到 3 + 2 还不知道要不要算 如果是 3 + 2 * 2 这样的式子 不应该算 应该先算 2 * 2 再算 3 + 4
             // 如果 3 + 2 - 2 这样的式子 应该先算 3 + 2 再算 5 - 2

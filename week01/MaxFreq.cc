@@ -8,21 +8,29 @@ using namespace std;
   // 先求出最高出現的次數 再依次去查詢等於 次數的字母
 class MaxFreq {
     public:
-        vector<string> maxFreq(string& str) {
-            //ps = "";
-            //strnum = vector<string, int>();
-            // for (string& s:str) {
-                
-            //     strnum[s]++;
-            // }
+        int main() {
+            string str = "dasdfdsdfgdeeeeffffggf";
+            vector<string> ans;
+            ans = maxFreq(str);
+
+            for (string &s : ans)
+            {
+                cout << s << endl;
+            }
+            return 0;
+        }
+        
+
+    private:
+        vector<string> maxFreq(string &str)
+        {
+
             cout << str.length() << endl;
             ans = vector<string>();
             ans.push_back("e");
             ans.push_back("f");
             return ans;
         }
-
-    private:
         //vector<string, int> strnum;
         vector<string> ans;
         //string ps;

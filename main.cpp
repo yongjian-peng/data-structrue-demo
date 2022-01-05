@@ -12,7 +12,7 @@
 #include "MergeArray.cc"
 #include "PushZerosToEnd.cc"
 #include "ReverseKGroup.cc"
-#include "NumberOfSubarrays.cc"
+
 #include "LearnStack.cc"
 #include <cstdlib>
 #include <queue>
@@ -27,30 +27,18 @@
 
 //#include "week01/CallFunction01.cc"
 #include "week01/Learn01.cc"
-#include "week02/CallFunction02.cc"
+#include "week02/Learn02.cc"
 
 using namespace std;
 
 int main()
 {
-  Learn01 learn01;
-  learn01.main();
-  // CallFunction01 CallFunction01;
-  // CallFunction01.callFunction();
+  // Learn01 learn01;
+  // learn01.main();
 
-  // CallFunction02 CallFunction02;
-  // CallFunction02.callFunction();
+  Learn02 learn02;
+  learn02.main();
 
-  // --------- 统计优美子数组 ----------
-  // NumberOfSubarrays ns;
-
-  // int arr[] = {1, 1, 0, 3, 1};
-
-  // vector<int> nums(arr, arr + 5);
-
-  // int s = 3;
-
-  // cout << ns.numberOfSubarrays(nums, s) << endl;
   //   TwoSum two;
   // int arr[4] = {2, 2, 2, 7};
   // vector<int> ao(arr, arr + 4);
