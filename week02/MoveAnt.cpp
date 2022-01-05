@@ -100,7 +100,7 @@ void simulation()
     return;
 }
 
-int main()
+int runmain()
 {
     int n;
     cout << "请输入蚂蚁数量：";

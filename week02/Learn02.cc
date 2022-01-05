@@ -17,6 +17,8 @@
 
 #include "MoveAnt.cpp"
 
+#include "FindLAC.cc"
+
 class Learn02
 {
 public:

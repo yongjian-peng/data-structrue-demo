@@ -22,8 +22,8 @@ class NumberofCattle {
                 ans += i;
             }
             cout << ans << endl;
-        }
-        
+        };
+
         vector<int> numberofNattle(vector<int> arr, int year, int current) {
             vector<int> newarr(arr.size() + 1, 0);
             if (current == year) {

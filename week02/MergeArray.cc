@@ -11,11 +11,11 @@ int runMergeArrays() {
 
     int arr3[n1 + n2];
 
-    mergeArrays(arr1, arr2, n1, n2, arr3);
-    int n3 = n1 + n2;
-    printArray(arr3, n3);
+    // mergeArrays(arr1, arr2, n1, n2, arr3);
+    // int n3 = n1 + n2;
+    // printArray(arr3, n3);
 
-    mergeArrays2(arr1, arr2, n1, n2);
+    // mergeArrays2(arr1, arr2, n1, n2);
     return 0;
 }
 
