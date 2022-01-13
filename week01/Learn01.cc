@@ -18,6 +18,8 @@
 
 #include "RemoveDuplicates.cc"
 
+#include "MyCircularDeque.cc"
+
 #include "../stdc++.h"
 
 class Learn01 {
@@ -52,8 +54,8 @@ class Learn01 {
             // td.main();
 
             // 初始只有一头牛。牛只有6年的生命(第0年出生，第6年死去)，牛第3年和第5年会生小牛。问：初始只有一只牛，求第n年牛的个数
-            NumberofCattle nc;
-            nc.main();
+            // NumberofCattle nc;
+            // nc.main();
 
             // ----------- 柱状图中最大矩形 ----------
             // LargestRectangleArea lra;
@@ -63,8 +65,11 @@ class Learn01 {
             // Lra3.main();
 
             // ----------- 计算器 ------------
-            Calculate cal;
-            cal.main();
+            // Calculate cal;
+            // cal.main();
+
+            MyCircularDeque myCircularDeque(10);
+            myCircularDeque.main();
 
             return 0;
         }

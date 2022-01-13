@@ -5,6 +5,7 @@ using namespace std;
 
 class TwoSum2
 {
+    public:
     vector<int> twoSum3(vector<int> &nums, int target) {
         // 定义一个map 来存已经计算过的值
         map<int, int> mp;
@@ -25,4 +26,4 @@ class TwoSum2
         }
         
     }
-}
+};

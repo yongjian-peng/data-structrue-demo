@@ -35,8 +35,9 @@ public:
         int i = treeDiameter(edges);
 
         cout << i << endl;
-    }
-    
+
+        return 0;
+    };
 
 private:
     int treeDiameter(vector<vector<int>> &edges)
