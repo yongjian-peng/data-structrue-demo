@@ -23,6 +23,8 @@
 
 #include "InsertSort.cpp"
 
+#include "MergeSort.cpp"
+
 class Learn02
 {
 public:
@@ -62,12 +64,16 @@ public:
         // moveAnt.main();
 
         // 选择排序
-        SelectSort selectSort;
-        selectSort.run();
+        // SelectSort selectSort;
+        // selectSort.run();
 
         // 插入排序
-        InsertSort insertSort;
-        insertSort.run();
+        // InsertSort insertSort;
+        // insertSort.run();
+
+        // 合并排序
+        MergeSort mergeSort;
+        mergeSort.run();
 
         return 0;
     }
