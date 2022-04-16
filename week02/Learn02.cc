@@ -25,6 +25,8 @@
 
 #include "MergeSort.cpp"
 
+#include "QuickSort.cpp"
+
 class Learn02
 {
 public:
@@ -72,8 +74,12 @@ public:
         // insertSort.run();
 
         // 合并排序
-        MergeSort mergeSort;
-        mergeSort.run();
+        // MergeSort mergeSort;
+        // mergeSort.run();
+
+        // 快速排序
+        QuickSort quickSort;
+        quickSort.run();
 
         return 0;
     }
