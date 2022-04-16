@@ -68,8 +68,9 @@ class Learn01 {
             // Calculate cal;
             // cal.main();
 
-            MyCircularDeque myCircularDeque(10);
-            myCircularDeque.main();
+            // 设计循环双端队列
+            // MyCircularDeque myCircularDeque(10);
+            // myCircularDeque.main();
 
             return 0;
         }

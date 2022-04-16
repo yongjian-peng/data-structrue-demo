@@ -19,6 +19,10 @@
 
 #include "FindLAC.cc"
 
+#include "SelectSort.cpp"
+
+#include "InsertSort.cpp"
+
 class Learn02
 {
 public:
@@ -56,6 +60,14 @@ public:
         // 移动蚂蚁
         // MoveAnt moveAnt;
         // moveAnt.main();
+
+        // 选择排序
+        SelectSort selectSort;
+        selectSort.run();
+
+        // 插入排序
+        InsertSort insertSort;
+        insertSort.run();
 
         return 0;
     }

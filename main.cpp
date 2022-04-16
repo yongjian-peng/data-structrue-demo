@@ -20,7 +20,7 @@ int main()
   Learn01 learn01;
   learn01.main();
 
-  // Learn02 learn02;
-  // learn02.main();
+  Learn02 learn02;
+  learn02.main();
   return 0;
 }
