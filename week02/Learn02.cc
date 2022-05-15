@@ -49,8 +49,8 @@ public:
         // reb.main();
 
         // ------ 堆排序 ---------
-        // HeapSort heapSort;
-        // heapSort.main();
+        HeapSort heapSort;
+        heapSort.main();
 
         // -------- 动态查找 第 k 大元素 ----------
         // runKthLargest();
@@ -78,8 +78,8 @@ public:
         // mergeSort.run();
 
         // 快速排序
-        QuickSort quickSort;
-        quickSort.run();
+        // QuickSort quickSort;
+        // quickSort.run();
 
         return 0;
     }
